@@ -1,4 +1,5 @@
 import LearningPreview from './learning-preview';
+import BrandLogo from './brand-logo';
 
 const base = process.env.NEXT_PUBLIC_ASSET_BASE ?? '';
 
@@ -6,7 +7,7 @@ export default function LearningPackage() {
   return <main className="learning-page" id="top">
     <a className="learning-skip no-print" href="#lerninhalt">Zum Inhalt</a>
     <header className="learning-header no-print"><div className="learning-wrap">
-      <a className="learning-brand" href={`${base}/`}><span className="logo-mark" aria-hidden="true">ض</span><span>Zarbol Masal</span></a>
+      <a className="brand-link" href={`${base}/`} aria-label="Zarbol Masal · ضرب‌المثل – Startseite"><BrandLogo /></a>
       <nav aria-label="Hauptnavigation"><a href={`${base}/#sammlung`}>Sammlung · مجموعه</a><a href="#lernprobe">Lernprobe · تمرین</a></nav>
     </div></header>
     <div className="learning-wrap" id="lerninhalt">

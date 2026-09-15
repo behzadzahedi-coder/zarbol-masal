@@ -133,6 +133,19 @@
   font-family: var(--font-heading);
 }
 
+.brand-link { display: inline-flex; flex-shrink: 0; border-radius: 6px; }
+.brand-logo { display: block; width: 270px; max-width: 100%; height: auto; }
+.brand-logo-compact { width: 228px; }
+.site-header-inner { gap: 24px; }
+@media (max-width: 600px) {
+  .brand-logo { width: 240px; }
+  .brand-logo-compact { width: 216px; }
+  .site-header-inner { flex-wrap: wrap; justify-content: center; gap: 6px; }
+  .site-header-inner nav { width: 100%; justify-content: center; padding-block: 4px; }
+  .learning-header > .learning-wrap { justify-content: center; gap: 6px; }
+  .learning-header nav { justify-content: center; flex-wrap: wrap; }
+}
+
 .logo-mark {
   display: grid;
   width: 2.75rem;

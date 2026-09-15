@@ -1,6 +1,7 @@
 'use client';
 
 import { useMemo, useState } from 'react';
+import BrandLogo from '@/components/brand-logo';
 import {
   ArrowLeftRight,
   BookOpen,
@@ -292,13 +293,9 @@ export default function Home() {
   return (
     <main id="top" className="min-h-screen overflow-hidden">
       <header className="sticky top-0 z-50 border-b border-amber-950/10 bg-[#fbf7ed]/90 backdrop-blur-xl">
-        <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-3.5 sm:px-8 lg:px-10">
-          <a href="#top" className="group flex items-center gap-3" aria-label="Zarbol Masal Startseite">
-            <span className="logo-mark" aria-hidden="true">ض</span>
-            <span className="leading-none">
-              <strong className="block font-heading text-lg tracking-[-0.03em] text-[#173c36]">Zarbol Masal</strong>
-              <span className="mt-1 block text-[10px] font-semibold uppercase tracking-[0.2em] text-[#9a5b32]">ضرب‌المثل · Sprichwort</span>
-            </span>
+        <div className="site-header-inner mx-auto flex max-w-7xl items-center justify-between px-5 py-3.5 sm:px-8 lg:px-10">
+          <a href="#top" className="brand-link" aria-label="Zarbol Masal · ضرب‌المثل – Startseite">
+            <BrandLogo />
           </a>
           <nav className="flex flex-wrap justify-end items-center gap-x-4 gap-y-2 text-xs font-semibold text-[#45615c] sm:text-sm" aria-label="Hauptnavigation / راهبری">
             <a className="transition-colors hover:text-[#a44a2c]" href={`${process.env.NEXT_PUBLIC_ASSET_BASE ?? ''}/lernpaket/`}>Lernpaket</a>
@@ -569,10 +566,7 @@ export default function Home() {
 
       <footer className="bg-[#f3ead8]">
         <div className="mx-auto flex max-w-7xl flex-col gap-5 px-5 py-8 text-sm text-[#6d716b] sm:flex-row sm:items-center sm:justify-between sm:px-8 lg:px-10">
-          <div className="flex items-center gap-3">
-            <span className="logo-mark logo-mark-small" aria-hidden="true">ض</span>
-            <span><strong className="text-[#173c36]">Zarbol Masal</strong> · ضرب‌المثل</span>
-          </div>
+          <a href="#top" className="brand-link" aria-label="Zarbol Masal · ضرب‌المثل – Startseite"><BrandLogo compact /></a>
           <p>Persische und deutsche Sprichwörter im kulturellen Vergleich.</p>
         </div>
       </footer>
