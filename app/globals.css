@@ -250,6 +250,18 @@
 }
 
 /* Learning materials extend the existing green, paper and copper palette. */
+.reading-guide { max-width: 1024px; margin: 24px auto 0; border: 1px solid #bbb9ad; border-radius: 14px; background: #fffdf7; scroll-margin-top: 130px; }
+.reading-guide summary { cursor: pointer; padding: 16px 20px; color: #173c36; font-size: 15px; font-weight: 600; }
+.reading-guide-content { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; padding: 0 20px 20px; color: #49645f; font-size: 15px; line-height: 1.8; }
+.reading-guide-content p + p { margin-top: 12px; }
+.proverb-transliteration { margin-top: 14px; padding: 14px 16px; background: #edf1e8; border-radius: 10px; color: #173c36; }
+.proverb-transliteration > span { display: block; margin-bottom: 5px; font: 600 12px/1.5 var(--font-sans); color: #49645f; }
+.proverb-transliteration > p { font: 500 17px/1.7 var(--font-sans); overflow-wrap: anywhere; }
+.proverb-example { margin-top: 18px; border-block: 1px solid #d9d4c7; color: #173c36; }
+.proverb-example summary { cursor: pointer; padding-block: 14px; font-size: 14px; font-weight: 600; }
+.proverb-example p { font-size: 15px; line-height: 1.8; margin-bottom: 16px; }
+.proverb-example p[lang='fa'] { font-size: 16px; }
+@media(max-width:720px) { .reading-guide-content { grid-template-columns: 1fr; gap: 18px; } }
 :where(a, button, input, summary):focus-visible { outline: 3px solid #9c492e; outline-offset: 4px; }
 .learning-wrap { max-width: 1160px; margin-inline: auto; padding-inline: 24px; }
 .learning-page { color: #173c36; line-height: 1.65; }

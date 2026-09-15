@@ -4,9 +4,10 @@ import './globals.css';
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.zarbol-masal.de'),
   alternates: { canonical: '/' },
+  icons: { icon: '/favicon.svg' },
   title: 'Zarbol Masal | Persische & deutsche Sprichwörter',
   description:
-    'Persische und deutsche Sprichwörter mit Bedeutung, Übersetzung und kulturell passender Entsprechung entdecken.',
+    'Persische und deutsche Sprichwörter mit lateinischer Umschrift, Bedeutungen und Alltagsbeispielen auf Deutsch und Persisch entdecken – auch ohne persische Lesekenntnisse.',
   keywords: [
     'persische Sprichwörter',
     'deutsche Sprichwörter',
@@ -17,7 +18,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Zarbol Masal | Sprichwörter neu verstehen',
     description:
-      'Persische und deutsche Sprichwörter mit Bedeutung und kulturell passender Entsprechung entdecken.',
+      'Mit lateinischer Umschrift, Bedeutungen und Beispielen in beiden Sprachen.',
     url: '/',
     siteName: 'Zarbol Masal',
     locale: 'de_DE',

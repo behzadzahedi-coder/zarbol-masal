@@ -145,7 +145,7 @@ export const additionalProverbs: Proverb[] = [
     proverb: 'تا نباشد چیزکی، مردم نگویند چیزها',
     equivalent: 'Wo Rauch ist, ist auch Feuer.',
     meaning:
-      'Ein hartnäckiges Gerücht besitzt manchmal zumindest einen kleinen wahren Kern.',
+      'Das Sprichwort vermutet hinter einem Gerücht einen Anlass. Ein Gerücht allein ist aber kein Beweis: Tatsachen sollten geprüft werden.',
     category: 'Alltag',
     note: 'Wörtlich: Gäbe es nicht eine Kleinigkeit, würden die Leute nicht so vieles erzählen.',
   },

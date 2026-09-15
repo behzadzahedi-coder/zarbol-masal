@@ -14,6 +14,7 @@ import { additionalProverbs, type Proverb } from '@/app/additional-proverbs';
 import { moreProverbs } from '@/app/more-proverbs';
 import proverbArt from '@/app/proverb-art.json';
 import { newProverbs } from '@/app/new-proverbs';
+import { proverbLearning } from '@/app/proverb-learning';
 import {
   Select,
   SelectContent,
@@ -47,7 +48,14 @@ const categoryLabels: Record<Direction, Record<string, string>> = {
 };
 
 function getCategoryLabel(category: string, language: Direction) {
-  return categoryLabels[language][category] ?? category;
+  const persian = categoryLabels.fa[category] ?? category;
+  return language === 'de' ? `${category} · ${persian}` : `${persian} · ${category}`;
+}
+
+function normalizeSearch(value: string) {
+  return value.normalize('NFKD').replace(/[\u0300-\u036f]/g, '').toLocaleLowerCase('de')
+    .replace(/ي/g, 'ی').replace(/ك/g, 'ک').replace(/q/g, 'gh')
+    .replace(/[\u200c\u200d\u0640]/g, '').replace(/[.,،؛!?؟:–—-]/g, ' ').replace(/\s+/g, ' ').trim();
 }
 
 const featuredProverbs: Proverb[] = [
@@ -211,13 +219,13 @@ const proverbPairs: Proverb[] = [
 ].filter((proverb) => proverb.language === 'fa');
 
 const directionOptions: { value: Direction; label: string; sublabel: string }[] = [
-  { value: 'fa', label: 'Persisch → Deutsch', sublabel: 'فارسی به آلمانی' },
-  { value: 'de', label: 'Deutsch → Persisch', sublabel: 'آلمانی به فارسی' },
+  { value: 'de', label: 'Deutsch zuerst', sublabel: 'اول آلمانی' },
+  { value: 'fa', label: 'Persisch zuerst', sublabel: 'اول فارسی' },
 ];
 
 export default function Home() {
   const [query, setQuery] = useState('');
-  const [direction, setDirection] = useState<Direction>('fa');
+  const [direction, setDirection] = useState<Direction>('de');
   const [category, setCategory] = useState(ALL_CATEGORIES);
   const [sortLanguage, setSortLanguage] = useState<SortLanguage>('default');
 
@@ -229,7 +237,7 @@ export default function Home() {
     return [
       {
         value: ALL_CATEGORIES,
-        label: direction === 'fa' ? 'همه' : 'Alle',
+        label: direction === 'fa' ? 'همه · Alle' : 'Alle · همه',
       },
       ...categories.map((value) => ({
         value,
@@ -239,7 +247,7 @@ export default function Home() {
   }, [direction]);
 
   const filteredProverbs = useMemo(() => {
-    const normalizedQuery = query.trim().toLocaleLowerCase('de');
+    const normalizedQuery = normalizeSearch(query);
 
     const matches = proverbPairs.filter((proverb) => {
       const matchesCategory =
@@ -252,7 +260,11 @@ export default function Home() {
           proverb.meaning,
           proverb.category,
           getCategoryLabel(proverb.category, direction),
-        ].some((value) => value.toLocaleLowerCase('de').includes(normalizedQuery));
+          proverbLearning[proverb.id].latin,
+          proverbLearning[proverb.id].meaningFa,
+          proverbLearning[proverb.id].exampleDe,
+          proverbLearning[proverb.id].exampleFa,
+        ].some((value) => normalizeSearch(value).includes(normalizedQuery));
 
       return matchesCategory && matchesQuery;
     });
@@ -288,9 +300,10 @@ export default function Home() {
               <span className="mt-1 block text-[10px] font-semibold uppercase tracking-[0.2em] text-[#9a5b32]">ضرب‌المثل · Sprichwort</span>
             </span>
           </a>
-          <nav className="flex flex-wrap justify-end items-center gap-x-4 gap-y-2 text-xs font-semibold text-[#45615c] sm:text-sm" aria-label="Hauptnavigation">
+          <nav className="flex flex-wrap justify-end items-center gap-x-4 gap-y-2 text-xs font-semibold text-[#45615c] sm:text-sm" aria-label="Hauptnavigation / راهبری">
             <a className="transition-colors hover:text-[#a44a2c]" href={`${process.env.NEXT_PUBLIC_ASSET_BASE ?? ''}/lernpaket/`}>Lernpaket</a>
-            <a className="transition-colors hover:text-[#a44a2c]" href="#ueber">Über das Projekt</a>
+            <a className="transition-colors hover:text-[#a44a2c]" href="#lesehilfe">Lesehilfe · راهنما</a>
+            <a className="transition-colors hover:text-[#a44a2c]" href="#ueber">Über uns · دربارهٔ ما</a>
           </nav>
         </div>
       </header>
@@ -305,7 +318,17 @@ export default function Home() {
             Finde das passende Sprichwort
           </h1>
           <p dir="rtl" lang="fa" className="mt-3 text-lg text-[#7c5c45]">ضرب‌المثل مورد نظرت را پیدا کن</p>
+          <p className="mt-4 text-base leading-7 text-[#49645f]">Auch ohne persische Schriftkenntnisse: mit lateinischer Umschrift, Bedeutungen und Beispielen in beiden Sprachen.</p>
+          <p dir="rtl" lang="fa" className="mt-2 text-base leading-7 text-[#49645f]">با آوانویسی لاتین، معنی و مثال به هر دو زبان، ضرب‌المثل‌ها را بهتر بفهمید و به کار ببرید.</p>
         </div>
+
+        <details id="lesehilfe" className="reading-guide">
+          <summary>So liest du die Umschrift · راهنمای خواندن آوانویسی</summary>
+          <div className="reading-guide-content">
+            <div lang="de"><p>Die lateinische Zeile unter dem persischen Text hilft beim Lesen. Sie ist eine vereinfachte Umschrift und gibt nicht alle Lautunterschiede wieder.</p><p><strong>â</strong> = langes a, <strong>sh</strong> = sch, <strong>ch</strong> = tsch, <strong>j</strong> = dsch, <strong>kh</strong> = ch wie in „Bach“. <strong>gh / q</strong> stehen für einen tief im Rachen gebildeten Laut ohne genaue deutsche Entsprechung.</p><p>Die deutsche Entsprechung ist sinngemäß. Die wörtliche Übersetzung zeigt das persische Bild. Beispiele sind erfundene Alltagssituationen.</p></div>
+            <div lang="fa" dir="rtl"><p>آوانویسی لاتین برای کمک به خواندن است و همهٔ تفاوت‌های آوایی را نشان نمی‌دهد. â برای آ، sh برای ش، ch برای چ، j برای ج و kh برای خ به کار رفته است.</p><p>معادلِ آلمانی بر پایهٔ معنی است، نه ترجمهٔ واژه‌به‌واژه. مثال‌ها موقعیت‌های روزمرهٔ ساخته‌شده برای یادگیری‌اند.</p></div>
+          </div>
+        </details>
 
         <aside className="learning-banner" aria-label="Kostenlose Lernprobe">
           <p><strong>Vom Nachschlagen zum Verstehen.</strong> Fünf Sprichwörter mit Umschrift und Übungen kennenlernen.</p>
@@ -318,11 +341,12 @@ export default function Home() {
               value={query}
               onChange={(event) => setQuery(event.target.value)}
               className="h-14 rounded-2xl border-transparent bg-white pl-12 pr-4 text-base shadow-none placeholder:text-[#9f9589] focus-visible:border-[#b55d36]/40 focus-visible:ring-[#b55d36]/15 sm:h-16 sm:text-lg"
-              placeholder="Sprichwort, Bedeutung oder واژه جستجو کنید …"
-              aria-label="Sprichwörter durchsuchen"
+              placeholder="Deutsch, فارسی oder Umschrift …"
+              aria-label="Sprichwörter durchsuchen / جست‌وجوی ضرب‌المثل"
             />
           </div>
 
+          <p className="px-1 pt-4 text-sm font-semibold text-[#49645f]">Welche Sprache möchtest du zuerst lesen? · کدام زبان اول نمایش داده شود؟</p>
           <div className="mt-3 grid gap-2 sm:grid-cols-2">
             {directionOptions.map((option) => {
               const isActive = direction === option.value;
@@ -341,7 +365,7 @@ export default function Home() {
                 >
                   <span>
                     <span className="block text-sm font-bold">{option.label}</span>
-                    <span dir="rtl" lang="fa" className={`mt-0.5 block text-xs ${isActive ? 'text-white/65' : 'text-[#9a7a63]'}`}>{option.sublabel}</span>
+                    <span dir="rtl" lang="fa" className={`mt-0.5 block text-xs ${isActive ? 'text-white/90' : 'text-[#76523c]'}`}>{option.sublabel}</span>
                   </span>
                   <ArrowLeftRight className="size-4 opacity-55" />
                 </Button>
@@ -377,11 +401,11 @@ export default function Home() {
           </div>
           <div className="flex shrink-0 flex-wrap items-center gap-3">
             <p className="text-sm font-medium text-[#7a847f]">
-              <strong className="text-[#173c36]">{filteredProverbs.length}</strong> Sprichwörter gefunden
+              <strong className="text-[#173c36]">{filteredProverbs.length}</strong> Sprichwörter · <span lang="fa" dir="rtl">ضرب‌المثل</span>
             </p>
             <Select value={sortLanguage} onValueChange={(value) => setSortLanguage(value as SortLanguage)}>
               <SelectTrigger className="h-10 min-w-48 rounded-full border-[#173c36]/15 bg-white px-4 text-[#49645f]" aria-label="Sprichwörter alphabetisch sortieren">
-                <SelectValue />
+                <SelectValue>{sortLanguage === 'de' ? 'Deutsch: A–Z' : sortLanguage === 'fa' ? 'فارسی: الف تا ی' : 'Reihenfolge · ترتیب'}</SelectValue>
               </SelectTrigger>
               <SelectContent align="end">
                 <SelectItem value="default">Ursprüngliche Reihenfolge</SelectItem>
@@ -396,6 +420,7 @@ export default function Home() {
           <div className="mt-8 grid gap-5 md:grid-cols-2">
             {filteredProverbs.map((proverb, index) => {
               const isPersian = direction === 'fa';
+              const learning = proverbLearning[proverb.id];
               const illustration = proverbArt[String(proverb.id) as keyof typeof proverbArt];
               const sourceText = isPersian
                 ? proverb.proverb
@@ -429,7 +454,7 @@ export default function Home() {
                     <span
                       dir={isPersian ? 'rtl' : 'ltr'}
                       lang={isPersian ? 'fa' : 'de'}
-                      className="text-xs font-semibold text-[#a87959]"
+                      className="text-xs font-semibold text-[#795238]"
                     >
                       {getCategoryLabel(proverb.category, direction)}
                     </span>
@@ -442,6 +467,7 @@ export default function Home() {
                   >
                     {sourceText}
                   </p>
+                  {isPersian && <div className="proverb-transliteration"><span>Umschrift · آوانویسی</span><p dir="ltr" lang="fa-Latn">{learning.latin}</p></div>}
 
                   <div className="my-6 flex items-center gap-3 text-[#b55d36]">
                     <span className="h-px flex-1 bg-current/20" />
@@ -450,8 +476,8 @@ export default function Home() {
                   </div>
 
                   <div>
-                    <p className="text-[10px] font-bold uppercase tracking-[0.18em] text-[#a87959]">
-                      {isPersian ? 'Deutsche Entsprechung' : 'معادل فارسی'}
+                    <p className="text-xs font-semibold text-[#795238]">
+                      {isPersian ? 'Deutsch, sinngemäß · معادل آلمانی' : 'Persisches Sprichwort · ضرب‌المثل فارسی'}
                     </p>
                     <p
                       dir={isPersian ? 'ltr' : 'rtl'}
@@ -460,11 +486,12 @@ export default function Home() {
                     >
                       {equivalentText}
                     </p>
+                    {!isPersian && <div className="proverb-transliteration"><span>Umschrift · آوانویسی</span><p dir="ltr" lang="fa-Latn">{learning.latin}</p></div>}
                   </div>
 
                   <div className="mt-6 rounded-xl border border-[#173c36]/8 bg-[#f5f0e5]/75 p-4">
-                    <p className="mb-1.5 text-[10px] font-bold uppercase tracking-[0.17em] text-[#7b8b86]">
-                      Bedeutung
+                    <p className="mb-1.5 text-xs font-semibold text-[#49645f]">
+                      Bedeutung · معنی
                     </p>
                     <p
                       dir="ltr"
@@ -473,12 +500,19 @@ export default function Home() {
                     >
                       {proverb.meaning}
                     </p>
+                    <p dir="rtl" lang="fa" className="mt-3 text-base leading-8 text-[#536963]">{learning.meaningFa}</p>
                   </div>
+
+                  <details className="proverb-example">
+                    <summary>Beispiel aus dem Alltag · مثال روزمره</summary>
+                    <p lang="de" dir="ltr">{learning.exampleDe}</p>
+                    <p lang="fa" dir="rtl">{learning.exampleFa}</p>
+                  </details>
 
                   <p
                     dir="ltr"
                     lang="de"
-                    className="mt-4 text-xs italic leading-5 text-[#968b7f]"
+                    className="mt-4 text-sm leading-6 text-[#686056]"
                   >
                     {proverb.note}
                   </p>
