@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import { proverbLearning } from '@/app/proverb-learning';
+import { pronunciationGuideDe } from '@/app/pronunciation';
 
 const lessonIds = [1, 2, 4, 56, 62];
 const persianQuestions = [
@@ -13,11 +14,11 @@ const persianQuestions = [
 ];
 
 const lessons = [
-  { fa: 'قطره قطره جمع گردد، وانگهی دریا شود', pronunciation: 'Qatre qatre jam gardad, vângahi daryâ shavad.', de: 'Kleinvieh macht auch Mist.', literal: 'Tropfen für Tropfen sammelt es sich, bis ein Meer entsteht.', context: 'Du lernst jeden Tag drei neue Wörter. Nach einigen Monaten kennst du schon viele.', question: 'Was steht hier im Mittelpunkt?', choices: ['Viele kleine Schritte ergeben zusammen viel.', 'Nur ein großer Schritt zählt.'], answer: 0, explanation: 'Beide Sprichwörter betonen, dass kleine Beiträge zusammen etwas Großes ergeben. Das deutsche Sprichwort wird besonders häufig bei Geld verwendet.' },
-  { fa: 'جوجه را آخر پاییز می‌شمارند', pronunciation: 'Juje râ âkhar-e pâyiz mishomârand.', de: 'Man soll den Tag nicht vor dem Abend loben.', literal: 'Die Küken zählt man am Ende des Herbstes.', context: 'Deine Mannschaft führt zur Halbzeit. Jemand erklärt sie schon zum Sieger.', question: 'Wie passt das Sprichwort zur Situation?', choices: ['Das Ergebnis steht bereits fest.', 'Erst am Ende lässt sich der Erfolg beurteilen.'], answer: 1, explanation: 'Die Bilder unterscheiden sich, die Aussage ist ähnlich: Ein Zwischenstand ist noch kein endgültiges Ergebnis.' },
-  { fa: 'آشپز که دو تا شد، آش یا شور می‌شود یا بی‌نمک', pronunciation: 'Âshpaz ke do tâ shod, âsh yâ shur mishavad yâ binamak.', de: 'Viele Köche verderben den Brei.', literal: 'Wenn es zwei Köche gibt, wird die Suppe entweder zu salzig oder ohne Salz.', context: 'Mehrere Personen ändern denselben Text gleichzeitig, ohne sich abzusprechen.', question: 'Welches Problem beschreibt das Sprichwort?', choices: ['Fehlende Abstimmung zwischen Verantwortlichen.', 'Zu wenig Zeit zum Kochen.'], answer: 0, explanation: 'Hier geht es um unkoordinierte Zuständigkeiten. Das Sprichwort bedeutet nicht, dass Zusammenarbeit grundsätzlich schlecht ist.' },
-  { fa: 'ماهی را هر وقت از آب بگیری تازه است', pronunciation: 'Mâhi râ har vaqt az âb begiri tâze ast.', de: 'Besser spät als nie.', literal: 'Wann immer du den Fisch aus dem Wasser holst, ist er frisch.', context: 'Du möchtest nach vielen Jahren wieder mit dem Sprachenlernen anfangen.', question: 'Wozu ermutigt das Sprichwort?', choices: ['Auf den perfekten Zeitpunkt zu warten.', 'Auch nach einer Verzögerung anzufangen.'], answer: 1, explanation: 'Die deutsche Entsprechung gibt die Ermutigung wieder: Auch ein später Anfang kann sich lohnen.' },
-  { fa: 'هر گردی گردو نیست', pronunciation: 'Har gerdi gerdu nist.', de: 'Es ist nicht alles Gold, was glänzt.', literal: 'Nicht alles Runde ist eine Walnuss.', context: 'Ein Angebot sieht auf den ersten Blick großartig aus. Du möchtest die Einzelheiten prüfen.', question: 'Welche Aussage passt?', choices: ['Ein schöner Eindruck beweist noch keinen Wert.', 'Alles Schöne ist wertlos.'], answer: 0, explanation: 'Beide Sprichwörter warnen vor vorschnellen Schlüssen aus dem äußeren Eindruck. Sie lehnen schöne Dinge nicht grundsätzlich ab.' },
+  { fa: 'قطره قطره جمع گردد، وانگهی دریا شود', de: 'Kleinvieh macht auch Mist.', literal: 'Tropfen für Tropfen sammelt es sich, bis ein Meer entsteht.', context: 'Du lernst jeden Tag drei neue Wörter. Nach einigen Monaten kennst du schon viele.', question: 'Was steht hier im Mittelpunkt?', choices: ['Viele kleine Schritte ergeben zusammen viel.', 'Nur ein großer Schritt zählt.'], answer: 0, explanation: 'Beide Sprichwörter betonen, dass kleine Beiträge zusammen etwas Großes ergeben. Das deutsche Sprichwort wird besonders häufig bei Geld verwendet.' },
+  { fa: 'جوجه را آخر پاییز می‌شمارند', de: 'Man soll den Tag nicht vor dem Abend loben.', literal: 'Die Küken zählt man am Ende des Herbstes.', context: 'Deine Mannschaft führt zur Halbzeit. Jemand erklärt sie schon zum Sieger.', question: 'Wie passt das Sprichwort zur Situation?', choices: ['Das Ergebnis steht bereits fest.', 'Erst am Ende lässt sich der Erfolg beurteilen.'], answer: 1, explanation: 'Die Bilder unterscheiden sich, die Aussage ist ähnlich: Ein Zwischenstand ist noch kein endgültiges Ergebnis.' },
+  { fa: 'آشپز که دو تا شد، آش یا شور می‌شود یا بی‌نمک', de: 'Viele Köche verderben den Brei.', literal: 'Wenn es zwei Köche gibt, wird die Suppe entweder zu salzig oder ohne Salz.', context: 'Mehrere Personen ändern denselben Text gleichzeitig, ohne sich abzusprechen.', question: 'Welches Problem beschreibt das Sprichwort?', choices: ['Fehlende Abstimmung zwischen Verantwortlichen.', 'Zu wenig Zeit zum Kochen.'], answer: 0, explanation: 'Hier geht es um unkoordinierte Zuständigkeiten. Das Sprichwort bedeutet nicht, dass Zusammenarbeit grundsätzlich schlecht ist.' },
+  { fa: 'ماهی را هر وقت از آب بگیری تازه است', de: 'Besser spät als nie.', literal: 'Wann immer du den Fisch aus dem Wasser holst, ist er frisch.', context: 'Du möchtest nach vielen Jahren wieder mit dem Sprachenlernen anfangen.', question: 'Wozu ermutigt das Sprichwort?', choices: ['Auf den perfekten Zeitpunkt zu warten.', 'Auch nach einer Verzögerung anzufangen.'], answer: 1, explanation: 'Die deutsche Entsprechung gibt die Ermutigung wieder: Auch ein später Anfang kann sich lohnen.' },
+  { fa: 'هر گردی گردو نیست', de: 'Es ist nicht alles Gold, was glänzt.', literal: 'Nicht alles Runde ist eine Walnuss.', context: 'Ein Angebot sieht auf den ersten Blick großartig aus. Du möchtest die Einzelheiten prüfen.', question: 'Welche Aussage passt?', choices: ['Ein schöner Eindruck beweist noch keinen Wert.', 'Alles Schöne ist wertlos.'], answer: 0, explanation: 'Beide Sprichwörter warnen vor vorschnellen Schlüssen aus dem äußeren Eindruck. Sie lehnen schöne Dinge nicht grundsätzlich ab.' },
 ];
 
 export default function LearningPreview() {
@@ -30,11 +31,11 @@ export default function LearningPreview() {
       <div><h2 id="preview-title">Fünf Sprichwörter zum Ausprobieren</h2><p dir="rtl" lang="fa">پنج ضرب‌المثل برای تمرین</p><p>Lesen, im Alltag einordnen und dein Verständnis prüfen. Ohne Anmeldung.</p></div>
       <button className="learning-button learning-button-secondary no-print" type="button" onClick={() => window.print()}>Lernprobe drucken / als PDF speichern</button>
     </div>
-    <p className="learning-note">Die Umschrift ist eine vereinfachte Aussprachehilfe: â steht für ein langes a, sh für sch und j für dsch. Deutsche Entsprechungen sind sinngemäß; sie können im Gebrauch abweichen.</p>
+    <p className="learning-note">{pronunciationGuideDe} <a href="/ueber-die-sammlung#umschrift">Aussprachehinweise und Quellen</a></p>
     <div className="learning-lessons">
       {lessons.map((lesson, index) => <article className="learning-lesson" key={lesson.fa}>
         <h3 lang="fa" dir="rtl">{lesson.fa}</h3>
-        <p className="learning-pronunciation">{lesson.pronunciation}</p>
+        <p className="learning-pronunciation" lang="fa-Latn" dir="ltr">{proverbLearning[lessonIds[index]].latin}</p>
         <p className="learning-equivalent">{lesson.de}</p>
         <p><strong>Wörtlich:</strong> {lesson.literal}</p>
         <p><strong>Im Alltag:</strong> {proverbLearning[lessonIds[index]].exampleDe}</p>

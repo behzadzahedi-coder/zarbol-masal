@@ -3,6 +3,7 @@ import { notFound } from 'next/navigation';
 import ContentShell from '@/components/content-shell';
 import { canonicalProverbs, findProverb, proverbPath, proverbSlug, siteUrl, topicPath, jsonLd } from '@/app/seo-content';
 import { proverbLearning } from '@/app/proverb-learning';
+import { pronunciationGuideDe } from '@/app/pronunciation';
 import proverbArt from '@/app/proverb-art.json';
 
 type Props = { params: Promise<{slug: string}> };
@@ -32,7 +33,7 @@ export default async function ProverbPage({params}: Props) {
       <h1>{p.equivalent.replace(/\.$/,'')} auf Persisch</h1>
       <p className="content-lead">Das persische Sprichwort <span lang="fa" dir="rtl">«{p.proverb}»</span> bedeutet: {p.meaning}</p>
       <p className="content-persian" lang="fa" dir="rtl">{p.proverb}</p>
-      <section className="content-panel" aria-labelledby="umschrift"><h2 id="umschrift">So liest du es · آوانویسی</h2><p className="content-latin" lang="fa-Latn" dir="ltr">{learning.latin}</p><p>Vereinfachte Lesehilfe: â steht für ein langes a, sh für sch und kh für den rauen ch-Laut. <a href="/ueber-die-sammlung#umschrift">Mehr zur Umschrift</a></p></section>
+      <section className="content-panel" aria-labelledby="umschrift"><h2 id="umschrift">Deutsche Aussprachehilfe · آوانویسی</h2><p className="content-latin" lang="fa-Latn" dir="ltr">{learning.latin}</p><p>{pronunciationGuideDe} <a href="/ueber-die-sammlung#umschrift">Aussprachehinweise und Quellen</a></p></section>
       <section><h2>Was bedeutet das Sprichwort?</h2><p>{p.meaning}</p><p lang="fa" dir="rtl">{learning.meaningFa}</p><p>{p.note}</p></section>
       {art && <figure className="content-illustration"><img src={art.src} alt={art.de} width={640} height={300} loading="lazy" /></figure>}
       <section><h2>Wie verwendet man es im Alltag?</h2><p>{learning.exampleDe}</p><p lang="fa" dir="rtl">{learning.exampleFa}</p></section>

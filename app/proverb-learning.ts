@@ -1,7 +1,9 @@
+import { germanReadingAid } from './pronunciation';
 // Editorial learning material. Transliteration is a simplified reading aid,
 // not phonetic notation. Examples are original illustrative situations.
 export type ProverbLearning = {
   latin: string;
+  internationalLatin: string;
   meaningFa: string;
   exampleDe: string;
   exampleFa: string;
@@ -157,5 +159,5 @@ const aliases: Record<number, number> = { 210:154, 226:143, 227:40, 228:145, 232
 for (const [id, source] of Object.entries(aliases)) rows[Number(id)] = rows[source];
 
 export const proverbLearning: Record<number, ProverbLearning> = Object.fromEntries(
-  Object.entries(rows).map(([id, [latin, meaningFa, exampleDe, exampleFa]]) => [id, { latin, meaningFa, exampleDe, exampleFa }]),
+  Object.entries(rows).map(([id, [internationalLatin, meaningFa, exampleDe, exampleFa]]) => [id, { latin: germanReadingAid(internationalLatin), internationalLatin, meaningFa, exampleDe, exampleFa }]),
 );

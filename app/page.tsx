@@ -16,6 +16,7 @@ import { proverbPath, topics, siteUrl, jsonLd } from '@/app/seo-content';
 import { moreProverbs } from '@/app/more-proverbs';
 import proverbArt from '@/app/proverb-art.json';
 import { proverbLearning } from '@/app/proverb-learning';
+import { pronunciationGuideDe, pronunciationGuideFa } from '@/app/pronunciation';
 import {
   Select,
   SelectContent,
@@ -102,6 +103,7 @@ export default function Home() {
           proverb.category,
           getCategoryLabel(proverb.category, direction),
           proverbLearning[proverb.id].latin,
+          proverbLearning[proverb.id].internationalLatin,
           proverbLearning[proverb.id].meaningFa,
           proverbLearning[proverb.id].exampleDe,
           proverbLearning[proverb.id].exampleFa,
@@ -165,8 +167,8 @@ export default function Home() {
         <details id="lesehilfe" className="reading-guide">
           <summary>So liest du die Umschrift · راهنمای خواندن آوانویسی</summary>
           <div className="reading-guide-content">
-            <div lang="de"><p>Die lateinische Zeile unter dem persischen Text hilft beim Lesen. Sie ist eine vereinfachte Umschrift und gibt nicht alle Lautunterschiede wieder.</p><p><strong>â</strong> = langes a, <strong>sh</strong> = sch, <strong>ch</strong> = tsch, <strong>j</strong> = dsch, <strong>kh</strong> = ch wie in „Bach“. <strong>gh / q</strong> stehen für einen tief im Rachen gebildeten Laut ohne genaue deutsche Entsprechung.</p><p>Die deutsche Entsprechung ist sinngemäß. Die wörtliche Übersetzung zeigt das persische Bild. Beispiele sind erfundene Alltagssituationen.</p></div>
-            <div lang="fa" dir="rtl"><p>آوانویسی لاتین برای کمک به خواندن است و همهٔ تفاوت‌های آوایی را نشان نمی‌دهد. â برای آ، sh برای ش، ch برای چ، j برای ج و kh برای خ به کار رفته است.</p><p>معادلِ آلمانی بر پایهٔ معنی است، نه ترجمهٔ واژه‌به‌واژه. مثال‌ها موقعیت‌های روزمرهٔ ساخته‌شده برای یادگیری‌اند.</p></div>
+            <div lang="de"><p>Die lateinische Zeile ist eine vereinfachte Aussprachehilfe für deutschsprachige Lernende, keine vollständige Lautschrift.</p><p>{pronunciationGuideDe}</p><p><a href="/ueber-die-sammlung#umschrift">Aussprachehinweise und Quellen</a></p><p>Die deutsche Entsprechung ist sinngemäß. Die wörtliche Übersetzung zeigt das persische Bild. Beispiele sind erfundene Alltagssituationen.</p></div>
+            <div lang="fa" dir="rtl"><p>{pronunciationGuideFa}</p><p>معادلِ آلمانی بر پایهٔ معنی است، نه ترجمهٔ واژه‌به‌واژه. مثال‌ها موقعیت‌های روزمرهٔ ساخته‌شده برای یادگیری‌اند.</p></div>
           </div>
         </details>
 
