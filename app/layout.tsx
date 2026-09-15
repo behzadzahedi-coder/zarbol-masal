@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { headers } from 'next/headers';
 import './globals.css';
 
 export const metadata: Metadata = {
@@ -42,13 +43,14 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const locale = (await headers()).get('x-zarbol-locale') === 'fa' ? 'fa' : 'de';
   return (
-    <html lang="de">
+    <html lang={locale} dir={locale==='fa'?'rtl':'ltr'}>
       <body><script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ '@context': 'https://schema.org', '@type': 'WebSite', '@id': 'https://www.zarbol-masal.de/#website', name: 'Zarbol Masal', alternateName: 'ضرب‌المثل', url: 'https://www.zarbol-masal.de/', inLanguage: ['de', 'fa'], description: 'Persische und deutsche Sprichwörter mit Umschrift, Bedeutung und Alltagsbeispielen.' }) }} />{children}</body>
     </html>
   );
