@@ -155,6 +155,10 @@
 .locale-count { margin-block: 20px; }
 .locale-cards { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 24px; }
 .locale-cards article > img { width: 100%; height: auto; border-radius: 12px; margin-bottom: 20px; }
+.locale-cards article > img.proverb-photo { aspect-ratio: 3 / 2; object-fit: cover; }
+.proverb-detail-photo { margin: 28px 0 36px; }
+.proverb-detail-photo img { display: block; width: 100%; height: auto; aspect-ratio: 3 / 2; object-fit: cover; border-radius: 16px; }
+.proverb-detail-photo figcaption { margin-top: 10px; color: #625b50; font-size: .92rem; }
 .locale-cards h2 { font: 600 26px/1.6 Georgia,serif; margin-block: 12px 20px; overflow-wrap: anywhere; }
 .locale-cards h3 { font-size: 15px; font-weight: 700; margin: 24px 0 8px; }
 .locale-cards p { line-height: 1.8; }

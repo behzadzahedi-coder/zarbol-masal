@@ -4,6 +4,7 @@ import {canonicalProverbs,proverbPath,topicPath,topics} from './seo-content';
 import type {Proverb} from './additional-proverbs';
 import {proverbLearning} from './proverb-learning';
 import {pronunciationGuideDe} from './pronunciation';
+import photos from './proverb-photos.json';
 import LocalizedCollection from '@/components/localized-collection';
 import LocalizedLessons from '@/components/localized-lessons';
 import GermanAboutContent from '@/components/german-about-content';
@@ -11,9 +12,10 @@ import GermanAboutContent from '@/components/german-about-content';
 export function CollectionPage({locale}:{locale:Locale}){const t=ui[locale];return <><section className="locale-intro"><h1>{t.title}</h1><p>{t.lead}</p><nav aria-label={t.topics}><ul className="topic-nav">{topics.map(topic=><li key={topic.slug}><a href={localizedPath(locale,`/themen/${topic.slug}`)}>{locale==='fa'?topic.fa:topic.name}</a></li>)}</ul></nav><a className="learning-text-link" href={localizedPath(locale,'/lernpaket')}>{t.free}</a></section><LocalizedCollection locale={locale}/></>;}
 
 export function DetailPage({locale,p}:{locale:Locale;p:Proverb}){
- const fa=locale==='fa';const t=ui[locale];const l=proverbLearning[p.id];const topic=topics.find(t=>t.name===p.category)!;
+ const fa=locale==='fa';const t=ui[locale];const l=proverbLearning[p.id];const topic=topics.find(t=>t.name===p.category)!;const photo=(photos as Record<string,Record<Locale,{src:string;alt:string}>>)[p.id]?.[locale];
  return <><nav className="content-breadcrumbs" aria-label={fa?'مسیر صفحه':'Brotkrumennavigation'}><a href={localizedPath(locale)}>{t.home}</a><span>/</span><a href={localizedPath(locale,topicPath(p.category))}>{fa?topic.fa:topic.name}</a></nav>
  <article><p className="locale-label">{t.source}</p><h1 lang={fa?'de':'fa'} dir={fa?'ltr':'rtl'}>{fa?p.equivalent:p.proverb}</h1>
+ {photo&&<figure className="proverb-detail-photo"><img src={photo.src} alt={photo.alt} width={960} height={640}/><figcaption>{fa?'تصویر یادآور واژه‌های ضرب‌المثل':'Merkbild zum Wortlaut des Sprichworts'}</figcaption></figure>}
  {!fa&&<section className="content-panel"><h2>{t.pronunciation}</h2><p className="content-latin" lang="fa-Latn" dir="ltr">{l.latin}</p><details><summary>Hinweise zur Aussprache</summary><p>{pronunciationGuideDe}</p><a href="/de/ueber-die-sammlung#umschrift">Lesehilfe und Quellen</a></details></section>}
  <section><h2>{t.meaning}</h2><p className="content-lead">{fa?l.meaningFa:p.meaning}</p>{!fa&&<p>{p.note}</p>}</section>
  <section><h2>{t.equivalent}</h2><blockquote>{fa?p.proverb:p.equivalent}</blockquote><p>{fa?'این عبارت فارسی مفهوم مشابهی دارد. تصویر و لحن آن ممکن است با عبارت آلمانی متفاوت باشد؛ بنابراین معادل فارسی را ترجمهٔ دقیق واژه‌به‌واژه ندانید.':'Die deutsche Entsprechung vermittelt eine ähnliche Idee. Bild und Ton können abweichen; sie ist keine Wort-für-Wort-Übersetzung.'}</p></section>
