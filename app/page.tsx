@@ -11,10 +11,10 @@ import {
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
-import { additionalProverbs, type Proverb } from '@/app/additional-proverbs';
+import { proverbPairs } from '@/app/proverbs';
+import { proverbPath, topics, siteUrl, jsonLd } from '@/app/seo-content';
 import { moreProverbs } from '@/app/more-proverbs';
 import proverbArt from '@/app/proverb-art.json';
-import { newProverbs } from '@/app/new-proverbs';
 import { proverbLearning } from '@/app/proverb-learning';
 import {
   Select,
@@ -58,166 +58,6 @@ function normalizeSearch(value: string) {
     .replace(/ي/g, 'ی').replace(/ك/g, 'ک').replace(/q/g, 'gh')
     .replace(/[\u200c\u200d\u0640]/g, '').replace(/[.,،؛!?؟:–—-]/g, ' ').replace(/\s+/g, ' ').trim();
 }
-
-const featuredProverbs: Proverb[] = [
-  {
-    id: 1,
-    language: 'fa',
-    proverb: 'قطره قطره جمع گردد، وانگهی دریا شود',
-    equivalent: 'Kleinvieh macht auch Mist.',
-    meaning:
-      'Viele kleine Beiträge wirken zunächst unbedeutend, ergeben zusammen aber etwas Großes.',
-    category: 'Geduld',
-    note: 'Wörtlich: Tropfen für Tropfen entsteht schließlich ein Meer.',
-  },
-  {
-    id: 2,
-    language: 'fa',
-    proverb: 'جوجه را آخر پاییز می‌شمارند',
-    equivalent: 'Man soll den Tag nicht vor dem Abend loben.',
-    meaning:
-      'Beurteile den Erfolg erst am Ende und freue dich nicht zu früh.',
-    category: 'Weisheit',
-    note: 'Wörtlich: Die Küken zählt man am Ende des Herbstes.',
-  },
-  {
-    id: 3,
-    language: 'fa',
-    proverb: 'از تو حرکت، از خدا برکت',
-    equivalent: 'Hilf dir selbst, so hilft dir Gott.',
-    meaning:
-      'Wer etwas erreichen will, muss selbst den ersten Schritt machen.',
-    category: 'Arbeit',
-    note: 'Wörtlich: Von dir die Bewegung, von Gott der Segen.',
-  },
-  {
-    id: 4,
-    language: 'fa',
-    proverb: 'آشپز که دو تا شد، آش یا شور می‌شود یا بی‌نمک',
-    equivalent: 'Viele Köche verderben den Brei.',
-    meaning:
-      'Zu viele Verantwortliche behindern sich und verschlechtern oft das Ergebnis.',
-    category: 'Zusammenarbeit',
-    note: 'Wörtlich: Bei zwei Köchen wird die Suppe zu salzig oder zu fad.',
-  },
-  {
-    id: 5,
-    language: 'fa',
-    proverb: 'نابرده رنج، گنج میسر نمی‌شود',
-    equivalent: 'Ohne Fleiß kein Preis.',
-    meaning: 'Ein wertvolles Ziel erreicht man nur durch Mühe und Ausdauer.',
-    category: 'Arbeit',
-    note: 'Wörtlich: Ohne Mühsal gelangt man nicht zum Schatz.',
-  },
-  {
-    id: 6,
-    language: 'fa',
-    proverb: 'مرغ همسایه غاز است',
-    equivalent: 'Auf der anderen Seite ist das Gras immer grüner.',
-    meaning:
-      'Was andere besitzen, erscheint uns oft besser als das Eigene.',
-    category: 'Alltag',
-    note: 'Wörtlich: Das Huhn des Nachbarn ist eine Gans.',
-  },
-  {
-    id: 7,
-    language: 'fa',
-    proverb: 'تا تنور داغ است، نان را بچسبان',
-    equivalent: 'Man muss das Eisen schmieden, solange es heiß ist.',
-    meaning: 'Nutze eine günstige Gelegenheit, solange sie noch besteht.',
-    category: 'Gelegenheit',
-    note: 'Wörtlich: Klebe das Brot an, solange der Ofen heiß ist.',
-  },
-  {
-    id: 8,
-    language: 'fa',
-    proverb: 'یک دست صدا ندارد',
-    equivalent: 'Gemeinsam sind wir stark.',
-    meaning:
-      'Manche Aufgaben gelingen nur, wenn Menschen zusammenarbeiten.',
-    category: 'Zusammenarbeit',
-    note: 'Wörtlich: Eine Hand allein macht kein Geräusch.',
-  },
-  {
-    id: 9,
-    language: 'de',
-    proverb: 'Eine Schwalbe macht noch keinen Sommer.',
-    equivalent: 'با یک گل بهار نمی‌شود',
-    meaning: 'یک نشانه یا موفقیت کوچک برای نتیجه‌گیری قطعی کافی نیست.',
-    category: 'Weisheit',
-    note: 'ترجمهٔ لفظی: یک پرستو به‌تنهایی تابستان را نمی‌سازد.',
-  },
-  {
-    id: 10,
-    language: 'de',
-    proverb: 'Wer anderen eine Grube gräbt, fällt selbst hinein.',
-    equivalent: 'چاه‌کن همیشه ته چاه است',
-    meaning: 'کسی که برای دیگران بدی می‌خواهد، اغلب خودش گرفتار آن می‌شود.',
-    category: 'رفتار',
-    note: 'ترجمهٔ لفظی: کسی که برای دیگری گودال می‌کند، خودش در آن می‌افتد.',
-  },
-  {
-    id: 11,
-    language: 'de',
-    proverb: 'Was du heute kannst besorgen, das verschiebe nicht auf morgen.',
-    equivalent: 'کار امروز را به فردا میفکن',
-    meaning: 'کاری را که امروز می‌توان انجام داد، نباید بی‌دلیل به تأخیر انداخت.',
-    category: 'کار',
-    note: 'ترجمهٔ لفظی و مفهوم هر دو ضرب‌المثل تقریباً یکسان‌اند.',
-  },
-  {
-    id: 12,
-    language: 'de',
-    proverb: 'Übung macht den Meister.',
-    equivalent: 'کار نیکو کردن از پُر کردن است',
-    meaning: 'مهارت با تمرین و تکرار فراوان به دست می‌آید.',
-    category: 'کار',
-    note: 'ترجمهٔ لفظی: تمرین، استاد می‌سازد.',
-  },
-  {
-    id: 13,
-    language: 'de',
-    proverb: 'Wie man in den Wald hineinruft, so schallt es heraus.',
-    equivalent: 'هر چه کنی، به خود کنی',
-    meaning: 'رفتار انسان با دیگران معمولاً به همان شکل به خودش بازمی‌گردد.',
-    category: 'رفتار',
-    note: 'ترجمهٔ لفظی: همان‌طور که در جنگل صدا می‌زنی، پژواک می‌شنوی.',
-  },
-  {
-    id: 14,
-    language: 'de',
-    proverb: 'Der Apfel fällt nicht weit vom Stamm.',
-    equivalent: 'گندم از گندم بروید، جو ز جو',
-    meaning: 'فرزندان اغلب ویژگی‌ها و رفتار خانوادهٔ خود را نشان می‌دهند.',
-    category: 'خانواده',
-    note: 'ترجمهٔ لفظی: سیب دور از درختش نمی‌افتد.',
-  },
-  {
-    id: 15,
-    language: 'de',
-    proverb: 'Wo ein Wille ist, ist auch ein Weg.',
-    equivalent: 'خواستن توانستن است',
-    meaning: 'اراده و پشتکار، راه رسیدن به هدف را پیدا می‌کند.',
-    category: 'اراده',
-    note: 'ترجمهٔ لفظی: هرجا اراده‌ای هست، راهی هم هست.',
-  },
-  {
-    id: 16,
-    language: 'de',
-    proverb: 'Reden ist Silber, Schweigen ist Gold.',
-    equivalent: 'زبان سرخ، سر سبز می‌دهد بر باد',
-    meaning: 'گاهی سکوت و سنجیده سخن گفتن از حرف زدن ارزشمندتر است.',
-    category: 'رفتار',
-    note: 'معادل فارسی بر خطرِ سخن نسنجیده تأکید بیشتری دارد.',
-  },
-];
-
-const proverbPairs: Proverb[] = [
-  ...featuredProverbs,
-  ...additionalProverbs,
-  ...moreProverbs,
-  ...newProverbs,
-].filter((proverb) => proverb.language === 'fa');
 
 const directionOptions: { value: Direction; label: string; sublabel: string }[] = [
   { value: 'de', label: 'Deutsch zuerst', sublabel: 'اول آلمانی' },
@@ -292,13 +132,14 @@ export default function Home() {
 
   return (
     <main id="top" className="min-h-screen overflow-hidden">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{__html:jsonLd({'@context':'https://schema.org','@type':'DefinedTermSet','@id':siteUrl+'/#sammlung',name:'Persische Sprichwörter mit deutschen Entsprechungen',description:'Sprichwörter mit lateinischer Umschrift, Bedeutung und Alltagsbeispielen auf Deutsch und Persisch.',url:siteUrl+'/',inLanguage:['de','fa'],isAccessibleForFree:true})}} />
       <header className="sticky top-0 z-50 border-b border-amber-950/10 bg-[#fbf7ed]/90 backdrop-blur-xl">
         <div className="site-header-inner mx-auto flex max-w-7xl items-center justify-between px-5 py-3.5 sm:px-8 lg:px-10">
           <a href="#top" className="brand-link" aria-label="Zarbol Masal · ضرب‌المثل – Startseite">
             <BrandLogo />
           </a>
           <nav className="flex flex-wrap justify-end items-center gap-x-4 gap-y-2 text-xs font-semibold text-[#45615c] sm:text-sm" aria-label="Hauptnavigation / راهبری">
-            <a className="transition-colors hover:text-[#a44a2c]" href={`${process.env.NEXT_PUBLIC_ASSET_BASE ?? ''}/lernpaket/`}>Lernpaket</a>
+            <a className="transition-colors hover:text-[#a44a2c]" href={`${process.env.NEXT_PUBLIC_ASSET_BASE ?? ''}/lernpaket`}>Lernpaket</a>
             <a className="transition-colors hover:text-[#a44a2c]" href="#lesehilfe">Lesehilfe · راهنما</a>
             <a className="transition-colors hover:text-[#a44a2c]" href="#ueber">Über uns · دربارهٔ ما</a>
           </nav>
@@ -312,11 +153,13 @@ export default function Home() {
             Zweisprachige Sammlung
           </div>
           <h1 className="font-heading text-3xl font-semibold tracking-[-0.045em] text-[#173c36] sm:text-5xl">
-            Finde das passende Sprichwort
+            Persische Sprichwörter mit deutscher Übersetzung
           </h1>
           <p dir="rtl" lang="fa" className="mt-3 text-lg text-[#7c5c45]">ضرب‌المثل مورد نظرت را پیدا کن</p>
           <p className="mt-4 text-base leading-7 text-[#49645f]">Auch ohne persische Schriftkenntnisse: mit lateinischer Umschrift, Bedeutungen und Beispielen in beiden Sprachen.</p>
           <p dir="rtl" lang="fa" className="mt-2 text-base leading-7 text-[#49645f]">با آوانویسی لاتین، معنی و مثال به هر دو زبان، ضرب‌المثل‌ها را بهتر بفهمید و به کار ببرید.</p>
+          <p className="mt-4 text-base leading-7 text-[#49645f]">Entdecke {proverbPairs.length} Einträge mit deutscher Entsprechung, Bedeutung und Alltagsbeispielen. Die lateinische Umschrift hilft dir beim Lesen auf Persisch.</p>
+          <nav aria-label="Sprichwörter nach Thema" className="topic-nav-home"><ul className="topic-nav">{topics.map(topic=><li key={topic.slug}><a href={`/themen/${topic.slug}`}>{topic.name} · <span lang="fa" dir="rtl">{topic.fa}</span></a></li>)}</ul></nav>
         </div>
 
         <details id="lesehilfe" className="reading-guide">
@@ -329,7 +172,7 @@ export default function Home() {
 
         <aside className="learning-banner" aria-label="Kostenlose Lernprobe">
           <p><strong>Vom Nachschlagen zum Verstehen.</strong> Fünf Sprichwörter mit Umschrift und Übungen kennenlernen.</p>
-          <a href={`${process.env.NEXT_PUBLIC_ASSET_BASE ?? ''}/lernpaket/#lernprobe`}>Kostenlose Lernprobe</a>
+          <a href={`${process.env.NEXT_PUBLIC_ASSET_BASE ?? ''}/lernpaket#lernprobe`}>Kostenlose Lernprobe</a>
         </aside>
         <div className="search-surface mx-auto mt-9 max-w-5xl p-3 sm:p-4">
           <div className="relative">
@@ -513,6 +356,7 @@ export default function Home() {
                   >
                     {proverb.note}
                   </p>
+                  <a className="proverb-detail-link" href={proverbPath(proverb)} aria-label={`${proverb.equivalent} – Bedeutung und Beispiel`}>Bedeutung &amp; Beispiel öffnen · معنی و مثال</a>
                 </article>
               );
             })}
@@ -567,7 +411,7 @@ export default function Home() {
       <footer className="bg-[#f3ead8]">
         <div className="mx-auto flex max-w-7xl flex-col gap-5 px-5 py-8 text-sm text-[#6d716b] sm:flex-row sm:items-center sm:justify-between sm:px-8 lg:px-10">
           <a href="#top" className="brand-link" aria-label="Zarbol Masal · ضرب‌المثل – Startseite"><BrandLogo compact /></a>
-          <p>Persische und deutsche Sprichwörter im kulturellen Vergleich.</p>
+          <div><p>Persische und deutsche Sprichwörter im kulturellen Vergleich.</p><a className="underline" href="/ueber-die-sammlung">Über die Sammlung, Übersetzung und Umschrift</a></div>
         </div>
       </footer>
     </main>

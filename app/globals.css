@@ -133,6 +133,36 @@
   font-family: var(--font-heading);
 }
 
+.content-page { color: #173c36; background: #fbf7ed; }
+.content-wrap { max-width: 900px; margin-inline: auto; padding: 36px 28px 72px; overflow-wrap: anywhere; }
+.content-wrap h1 { font: 600 clamp(32px, 4.5vw, 52px)/1.2 Georgia, serif; letter-spacing: -.025em; margin: 24px 0; }
+.content-wrap h2 { font: 600 clamp(23px, 3vw, 30px)/1.35 Georgia, serif; margin: 0 0 16px; }
+.content-wrap p, .content-wrap dd { font-size: 17px; line-height: 1.85; margin-block: 14px; }
+.content-wrap p[lang='fa'] { font-size: 21px; line-height: 2; }
+.content-wrap .content-lead { font-size: 21px; line-height: 1.75; }
+.content-wrap .content-persian { font-size: clamp(27px, 4vw, 40px); margin-block: 28px; }
+.content-wrap a, .proverb-detail-link { color: #854021; text-decoration: underline; text-underline-offset: 4px; }
+.content-wrap section { margin-block: 40px; }
+.content-breadcrumbs { display: flex; flex-wrap: wrap; gap: 8px; font-size: 14px; line-height: 1.8; }
+.content-panel { background: #edf0e6; border: 1px solid #cbd6c9; border-radius: 16px; padding: 26px; margin-block: 32px; }
+.content-wrap .content-latin { font-size: 23px; font-weight: 600; }
+.content-illustration { max-width: 640px; margin: 32px auto; }
+.content-illustration img { display: block; width: 100%; height: auto; border-radius: 16px; }
+.content-wrap blockquote { font-size: 24px; line-height: 1.5; border-left: 3px solid #9a5b32; padding-left: 20px; margin-block: 20px; }
+.content-wrap .content-method { font-size: 14px; color: #49645f; border-top: 1px solid #cbd6c9; padding-top: 20px; }
+.content-links, .topic-entries { padding: 0; list-style: none; }
+.content-links li { margin-block: 18px; }
+.content-links span { display: block; color: #49645f; margin-top: 6px; }
+.topic-entries li { padding-block: 28px; border-bottom: 1px solid #cbd6c9; }
+.topic-nav { display: flex; flex-wrap: wrap; gap: 12px 20px; list-style: none; padding: 0; }
+.topic-nav-home { margin: 24px auto; }
+.topic-nav-home ul { justify-content: center; font-size: 14px; }
+.topic-nav-home a { color: #854021; text-decoration: underline; text-underline-offset: 4px; }
+.proverb-detail-link { display: inline-block; font-size: 14px; line-height: 1.8; margin-top: 20px; }
+.pronunciation-list { display: grid; grid-template-columns: 70px 1fr; gap: 0 20px; }
+.pronunciation-list dt { font-weight: 700; padding-top: 14px; }
+@media(max-width:600px) { .content-wrap { padding: 24px 20px 48px; } .content-panel { padding: 20px; } .content-wrap .content-lead { font-size: 18px; } }
+
 .brand-link { display: inline-flex; flex-shrink: 0; border-radius: 6px; }
 .brand-logo { display: block; width: 270px; max-width: 100%; height: auto; }
 .brand-logo-compact { width: 228px; }

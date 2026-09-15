@@ -25,7 +25,7 @@ export default function LearningPackage() {
           <a className="learning-text-link" href="#lernprobe">Jetzt die kostenlose Lernprobe ansehen</a>
         </aside>
       </section>
-      <div className="print-only"><h1>Zarbol Masal · Kostenlose Lernprobe</h1><p>Persische und deutsche Sprichwörter · www.zarbol-masal.de</p></div>
+      <div className="print-only"><p className="text-2xl font-bold">Zarbol Masal · Kostenlose Lernprobe</p><p>Persische und deutsche Sprichwörter · www.zarbol-masal.de</p></div>
       <LearningPreview />
       <section className="learning-faq no-print" aria-labelledby="faq-title"><h2 id="faq-title">Gut zu wissen</h2>
         <details><summary>Bleibt die Sprichwort-Sammlung kostenlos?</summary><p>Ja. Die Sammlung mit Suche und Erklärungen bleibt frei zugänglich. Das geplante Lernpaket ergänzt sie um aufbereitete Lernmaterialien.</p></details>
