@@ -1,0 +1,752 @@
+{
+  "1": {
+    "src": "/proverbs/1.svg",
+    "de": "Viele Tropfen füllen ein Meer",
+    "fa": "قطره‌ها دریایی می‌سازند"
+  },
+  "2": {
+    "src": "/proverbs/2.svg",
+    "de": "Eine Henne zählt ihre Küken unter herbstlichen Blättern",
+    "fa": "مرغ و جوجه‌ها در پاییز"
+  },
+  "3": {
+    "src": "/proverbs/3.svg",
+    "de": "Ein Mensch pflanzt einen Baum und gießt ihn",
+    "fa": "کاشتن و پرورش نهال"
+  },
+  "4": {
+    "src": "/proverbs/4.svg",
+    "de": "Zwei Köche schütten Salz in denselben Topf",
+    "fa": "دو آشپز و یک دیگ"
+  },
+  "5": {
+    "src": "/proverbs/5.svg",
+    "de": "Nach mühsamem Graben wird ein Schatz sichtbar",
+    "fa": "گنج پس از رنج"
+  },
+  "6": {
+    "src": "/proverbs/6.svg",
+    "de": "Huhn und große Gans auf gegenüberliegenden Seiten eines Zauns",
+    "fa": "مرغ و غاز در دو سوی حصار"
+  },
+  "7": {
+    "src": "/proverbs/7.svg",
+    "de": "Ein Schmied bearbeitet glühendes Eisen",
+    "fa": "آهنگری با آهن داغ"
+  },
+  "8": {
+    "src": "/proverbs/8.svg",
+    "de": "Zwei Menschen heben gemeinsam einen schweren Balken",
+    "fa": "بلند کردن تیر با همکاری"
+  },
+  "17": {
+    "src": "/proverbs/17.svg",
+    "de": "Ein Schwimmer im tiefen Wasser",
+    "fa": "شناگر در آب عمیق"
+  },
+  "18": {
+    "src": "/proverbs/18.svg",
+    "de": "Ein Wanderer sucht in der Ferne, neben ihm steht Wasser",
+    "fa": "آب در کوزه کنار رهگذر"
+  },
+  "19": {
+    "src": "/proverbs/19.svg",
+    "de": "Wasser fließt aus einem Bach über einen Wasserfall",
+    "fa": "آب رفته از جوی"
+  },
+  "20": {
+    "src": "/proverbs/20.svg",
+    "de": "Ein stiller See spiegelt einen Baum",
+    "fa": "دریاچه آرام و بازتاب درخت"
+  },
+  "21": {
+    "src": "/proverbs/21.svg",
+    "de": "Ein Angler fängt einen Fisch im trüben Teich",
+    "fa": "ماهیگیری در آب گل‌آلود"
+  },
+  "22": {
+    "src": "/proverbs/22.svg",
+    "de": "Geschmückte Kannen um einen leeren Teller",
+    "fa": "ظرف‌های زیبا و بشقاب خالی"
+  },
+  "23": {
+    "src": "/proverbs/23.svg",
+    "de": "Zwischen zwei Säulen öffnet sich ein heller Weg",
+    "fa": "راه روشن میان دو ستون"
+  },
+  "24": {
+    "src": "/proverbs/24.svg",
+    "de": "Aus einem Krug fließen herzförmige Tropfen",
+    "fa": "از کوزه همان برون تراود"
+  },
+  "25": {
+    "src": "/proverbs/25.svg",
+    "de": "Ein Mensch richtet sein Bett selbst her",
+    "fa": "آماده کردن بستر"
+  },
+  "26": {
+    "src": "/proverbs/26.svg",
+    "de": "Eine Hand versucht zwei Wassermelonen zu tragen",
+    "fa": "یک دست و دو هندوانه"
+  },
+  "27": {
+    "src": "/proverbs/27.svg",
+    "de": "Ein Kamel trägt eine gefährlich schiefe Last",
+    "fa": "بار کج روی شتر"
+  },
+  "28": {
+    "src": "/proverbs/28.svg",
+    "de": "Der Wind trägt Münzen heran und wieder fort",
+    "fa": "سکه‌ها در باد"
+  },
+  "29": {
+    "src": "/proverbs/29.svg",
+    "de": "Drei Menschen stützen ein gemeinsames Herz",
+    "fa": "همبستگی آدم‌ها"
+  },
+  "30": {
+    "src": "/proverbs/30.svg",
+    "de": "Rauch verrät ein Feuer hinter einer Mauer",
+    "fa": "دود نشان آتش است"
+  },
+  "31": {
+    "src": "/proverbs/31.svg",
+    "de": "Eine Hand verschließt das Leck eines Wasserkrugs",
+    "fa": "بستن نشتی کوزه"
+  },
+  "32": {
+    "src": "/proverbs/32.svg",
+    "de": "Ein Mensch schweigt trotz lauter Sprechblasen",
+    "fa": "سکوت در برابر هیاهو"
+  },
+  "33": {
+    "src": "/proverbs/33.svg",
+    "de": "Eine Lampe erhellt das eigene Haus",
+    "fa": "چراغ روشن خانه"
+  },
+  "34": {
+    "src": "/proverbs/34.svg",
+    "de": "Der Gräber rutscht in seine eigene Grube",
+    "fa": "چاه‌کن در چاه خود"
+  },
+  "35": {
+    "src": "/proverbs/35.svg",
+    "de": "Eine schiefe Grundreihe lässt die ganze Mauer kippen",
+    "fa": "دیوار کج از خشت نخست"
+  },
+  "36": {
+    "src": "/proverbs/36.svg",
+    "de": "Drei Wölfe heulen unter dem Mond",
+    "fa": "زوزه گرگ‌ها زیر ماه"
+  },
+  "37": {
+    "src": "/proverbs/37.svg",
+    "de": "Zwei schwarze Töpfe stehen einander gegenüber",
+    "fa": "دو دیگ سیاه روبه‌روی هم"
+  },
+  "38": {
+    "src": "/proverbs/38.svg",
+    "de": "Zwei Nachbarn grüßen sich über einen Gartenzaun",
+    "fa": "دو همسایه در دو سوی حصار"
+  },
+  "39": {
+    "src": "/proverbs/39.svg",
+    "de": "Drei Fische werden von links nach rechts immer größer",
+    "fa": "ماهی‌های کوچک و بزرگ"
+  },
+  "40": {
+    "src": "/proverbs/40.svg",
+    "de": "Ein geschlossenes Stadttor hält Gespräche nicht auf",
+    "fa": "دروازه بسته و گفت‌وگوی مردم"
+  },
+  "41": {
+    "src": "/proverbs/41.svg",
+    "de": "Ein kluger Gegenspieler zeigt einen sicheren Weg über die Schlucht",
+    "fa": "راه امن بر فراز دره"
+  },
+  "42": {
+    "src": "/proverbs/42.svg",
+    "de": "Tropfen höhlen einen Stein aus",
+    "fa": "قطره و سنگ"
+  },
+  "43": {
+    "src": "/proverbs/43.svg",
+    "de": "Ein junger Baum blüht im ersten Frühlingslicht",
+    "fa": "شکوفه‌های آغاز بهار"
+  },
+  "44": {
+    "src": "/proverbs/44.svg",
+    "de": "Ein Mensch steht vor einem viel zu großen Wurfstein",
+    "fa": "سنگی بزرگ‌تر از توان"
+  },
+  "45": {
+    "src": "/proverbs/45.svg",
+    "de": "Ein Kamel zieht schweigend an einem Beobachter vorbei",
+    "fa": "شتر و رهگذر خاموش"
+  },
+  "46": {
+    "src": "/proverbs/46.svg",
+    "de": "Ein Wanderer geht ruhig mit einer Sanduhr",
+    "fa": "رهگذر آرام و ساعت شنی"
+  },
+  "47": {
+    "src": "/proverbs/47.svg",
+    "de": "Ein Wink zeigt den Weg zur offenen Tür",
+    "fa": "اشاره‌ای به در باز"
+  },
+  "48": {
+    "src": "/proverbs/48.svg",
+    "de": "Aus einem zerbrochenen Krug wächst eine Blume",
+    "fa": "گل در کوزه شکسته"
+  },
+  "49": {
+    "src": "/proverbs/49.svg",
+    "de": "Ein Baum wirft im Sonnenlicht einen langen Schatten",
+    "fa": "نور و سایه درخت"
+  },
+  "50": {
+    "src": "/proverbs/50.svg",
+    "de": "Eine kleine Chilischote entfacht große Schärfe",
+    "fa": "فلفل کوچک و تندی بسیار"
+  },
+  "51": {
+    "src": "/proverbs/51.svg",
+    "de": "Tauben sitzen zusammen, Falken auf einem anderen Ast",
+    "fa": "کبوتر با کبوتر و باز با باز"
+  },
+  "52": {
+    "src": "/proverbs/52.svg",
+    "de": "Trauben reifen mit der Zeit zu einer Süßspeise",
+    "fa": "انگور و شیرینی با گذشت زمان"
+  },
+  "53": {
+    "src": "/proverbs/53.svg",
+    "de": "Eine Hand löst behutsam einen Knoten",
+    "fa": "باز کردن گره با دست"
+  },
+  "54": {
+    "src": "/proverbs/54.svg",
+    "de": "Eine Katze blickt zu unerreichbar hoch hängendem Fleisch",
+    "fa": "گربه و گوشت دور از دسترس"
+  },
+  "55": {
+    "src": "/proverbs/55.svg",
+    "de": "Regen fällt auf einen zerbrochenen Krug und eine geknickte Blume",
+    "fa": "باران و کوزه شکسته و گل خمیده"
+  },
+  "56": {
+    "src": "/proverbs/56.svg",
+    "de": "Ein frischer Fisch wird aus dem Wasser gehoben",
+    "fa": "بیرون آوردن ماهی تازه از آب"
+  },
+  "57": {
+    "src": "/proverbs/57.svg",
+    "de": "Ein Mensch erschrickt vor einem Seil, erinnert an eine Schlange",
+    "fa": "ترس از ریسمان پس از مارگزیدگی"
+  },
+  "58": {
+    "src": "/proverbs/58.svg",
+    "de": "Eine Maus mit Besen am Schwanz passt nicht ins Loch",
+    "fa": "موش با جارو کنار سوراخ"
+  },
+  "59": {
+    "src": "/proverbs/59.svg",
+    "de": "Ein Hammer trifft einen Nagel auf einem harten Stein",
+    "fa": "میخ آهنی و سنگ سخت"
+  },
+  "60": {
+    "src": "/proverbs/60.svg",
+    "de": "Ein großes Dach trägt eine schwere Schneedecke",
+    "fa": "برف بیشتر بر بام بزرگ‌تر"
+  },
+  "61": {
+    "src": "/proverbs/61.svg",
+    "de": "Ein Wanderer überquert Berge zu einem Pfau",
+    "fa": "راه دشوار تا طاووس"
+  },
+  "62": {
+    "src": "/proverbs/62.svg",
+    "de": "Glänzende Münze und einfacher Stein werden verglichen",
+    "fa": "سکه درخشان و سنگ معمولی"
+  },
+  "63": {
+    "src": "/proverbs/63.svg",
+    "de": "Ein unerfahrener junger Mensch mit Milchbecher",
+    "fa": "تازه‌کار با فنجان شیر"
+  },
+  "64": {
+    "src": "/proverbs/64.svg",
+    "de": "Ein Mensch fegt vor seiner eigenen Haustür",
+    "fa": "جارو کردن جلوی خانه خود"
+  },
+  "65": {
+    "src": "/proverbs/65.svg",
+    "de": "Aus einer Krähe wird in einer Sprechblase ein ganzer Schwarm",
+    "fa": "یک کلاغ و چهل کلاغ"
+  },
+  "66": {
+    "src": "/proverbs/66.svg",
+    "de": "Füße reichen über einen kurzen Teppich hinaus",
+    "fa": "پاها بیرون از گلیم"
+  },
+  "117": {
+    "src": "/proverbs/117.svg",
+    "de": "Ein ruhiges Kissen neben einer sauber abgeschlossenen Rechnung",
+    "fa": "بالش آسوده و حساب پاک"
+  },
+  "118": {
+    "src": "/proverbs/118.svg",
+    "de": "Feuer erreicht trockenes Holz und einen grünen Zweig",
+    "fa": "آتش در چوب خشک و تر"
+  },
+  "119": {
+    "src": "/proverbs/119.svg",
+    "de": "Ein unberührter Suppenteller und ein verbrannter Mund",
+    "fa": "آش نخورده و دهان سوخته"
+  },
+  "120": {
+    "src": "/proverbs/120.svg",
+    "de": "Ein Zicklein wartet im Winter auf Frühlingsmelonen",
+    "fa": "بزغاله در انتظار خربزه بهاری"
+  },
+  "121": {
+    "src": "/proverbs/121.svg",
+    "de": "Ein geöffneter Schirm hält den Regen von einem Menschen fern",
+    "fa": "چتر پیش از باران"
+  },
+  "122": {
+    "src": "/proverbs/122.svg",
+    "de": "Aus einem Gespräch wird das Können eines Menschen sichtbar",
+    "fa": "شناخت آدم از گفتارش"
+  },
+  "123": {
+    "src": "/proverbs/123.svg",
+    "de": "Ein bellender Hund reagiert auf einen erhobenen Stock",
+    "fa": "سگ پارس‌کن و چوب بلند"
+  },
+  "124": {
+    "src": "/proverbs/124.svg",
+    "de": "Aus einem alten Holzklotz steigt kräftiger Rauch",
+    "fa": "دود از کنده قدیمی"
+  },
+  "125": {
+    "src": "/proverbs/125.svg",
+    "de": "Langsames Backen bringt ein fertiges Brot hervor",
+    "fa": "نان آماده پس از انتظار"
+  },
+  "126": {
+    "src": "/proverbs/126.svg",
+    "de": "Ein Mensch betrachtet ein gerahmtes Bild früherer Jahre",
+    "fa": "نگاه به تصویر سال‌های گذشته"
+  },
+  "127": {
+    "src": "/proverbs/127.svg",
+    "de": "Ein Hund schläft ungestört neben einer Tür",
+    "fa": "سگ خوابیده کنار در"
+  },
+  "128": {
+    "src": "/proverbs/128.svg",
+    "de": "Ein Auge betrachtet eine wirkliche Landschaft",
+    "fa": "دیدن منظره با چشم"
+  },
+  "129": {
+    "src": "/proverbs/129.svg",
+    "de": "Tiefe Wurzeln nähren süße Früchte",
+    "fa": "ریشه تلخ صبر و میوه شیرین"
+  },
+  "130": {
+    "src": "/proverbs/130.svg",
+    "de": "Ein Küken belehrt eine größere Henne",
+    "fa": "جوجه به مرغ درس می‌دهد"
+  },
+  "131": {
+    "src": "/proverbs/131.svg",
+    "de": "Ein Arzt schaut mit Medizin in den eigenen Spiegel",
+    "fa": "پزشک و آینه خودش"
+  },
+  "132": {
+    "src": "/proverbs/132.svg",
+    "de": "Zwei Menschen treffen sich zwischen getrennten Bergen",
+    "fa": "دیدار دو انسان میان کوه‌ها"
+  },
+  "133": {
+    "src": "/proverbs/133.svg",
+    "de": "Ein Gast wird mit Tee und Brot empfangen",
+    "fa": "پذیرایی از مهمان با چای و نان"
+  },
+  "134": {
+    "src": "/proverbs/134.svg",
+    "de": "Ein Kebabspieß wird im richtigen Abstand über Feuer gehalten",
+    "fa": "سیخ کباب با فاصله مناسب از آتش"
+  },
+  "135": {
+    "src": "/proverbs/135.svg",
+    "de": "Uhr und Sprechblase am richtigen Platz",
+    "fa": "زمان و جای مناسب سخن"
+  },
+  "136": {
+    "src": "/proverbs/136.svg",
+    "de": "Unter einem Dach herrschen Sonne und Regen",
+    "fa": "یک بام با آفتاب و باران"
+  },
+  "137": {
+    "src": "/proverbs/137.svg",
+    "de": "Ein hungriger Mensch freut sich über einfaches Brot",
+    "fa": "آدم گرسنه و نان ساده"
+  },
+  "138": {
+    "src": "/proverbs/138.svg",
+    "de": "Stilles Wasser setzt Algen an, daneben fließt ein Bach",
+    "fa": "آب راکد و جوی روان"
+  },
+  "139": {
+    "src": "/proverbs/139.svg",
+    "de": "Die Sonne bricht nach dem Regen hervor",
+    "fa": "آفتاب پس از باران"
+  },
+  "140": {
+    "src": "/proverbs/140.svg",
+    "de": "Ein Mensch baut eine Mauer statt nur darüber zu reden",
+    "fa": "ساختن دیوار با عمل"
+  },
+  "141": {
+    "src": "/proverbs/141.svg",
+    "de": "Drei goldene Früchte in einer Schüssel",
+    "fa": "سه میوه طلایی در کاسه"
+  },
+  "142": {
+    "src": "/proverbs/142.svg",
+    "de": "Ein Hahn kräht nachts neben einem schlafenden Haus",
+    "fa": "خروس بی‌محل در شب"
+  },
+  "143": {
+    "src": "/proverbs/143.svg",
+    "de": "Ein reich tragender Baum neigt seine Zweige",
+    "fa": "درخت پربار با شاخه افتاده"
+  },
+  "144": {
+    "src": "/proverbs/144.svg",
+    "de": "Eine helfende Hand reicht Brot, der Empfänger wendet sich ab",
+    "fa": "نان در دست بخشنده و روی برگرداندن"
+  },
+  "145": {
+    "src": "/proverbs/145.svg",
+    "de": "Eine einzelne helfende Tat wiegt viele Worte auf",
+    "fa": "یک کردار در برابر سخنان بسیار"
+  },
+  "146": {
+    "src": "/proverbs/146.svg",
+    "de": "Ein Gesicht und ein Herz spiegeln sich",
+    "fa": "چهره و دل در آینه"
+  },
+  "147": {
+    "src": "/proverbs/147.svg",
+    "de": "Freundliche Worte locken eine Schlange aus ihrem Loch",
+    "fa": "سخن خوش و مار بیرون از سوراخ"
+  },
+  "148": {
+    "src": "/proverbs/148.svg",
+    "de": "Eine Schüssel glüht heißer als die Suppe darin",
+    "fa": "کاسه داغ‌تر از آش"
+  },
+  "149": {
+    "src": "/proverbs/149.svg",
+    "de": "Ein Mensch hält im Bett die Augen trotz Weckruf geschlossen",
+    "fa": "خود را به خواب زدن"
+  },
+  "150": {
+    "src": "/proverbs/150.svg",
+    "de": "Eine kleine Handvoll Korn zeigt den Inhalt eines großen Sacks",
+    "fa": "مشت گندم و کیسه بزرگ"
+  },
+  "151": {
+    "src": "/proverbs/151.svg",
+    "de": "Ein Fischkopf mit aufsteigenden Geruchslinien",
+    "fa": "ماهی که از سر بو می‌دهد"
+  },
+  "152": {
+    "src": "/proverbs/152.svg",
+    "de": "Eine klare Stopp-Hand bringt Ruhe",
+    "fa": "نه روشن و آسودگی"
+  },
+  "153": {
+    "src": "/proverbs/153.svg",
+    "de": "Ein Lehrling zeigt dem erfahrenen Meister einen Trick",
+    "fa": "شاگرد در برابر استاد"
+  },
+  "154": {
+    "src": "/proverbs/154.svg",
+    "de": "Eine Sprechblase ersetzt die echte Süßspeise nicht",
+    "fa": "گفتن حلوا جای خوردن را نمی‌گیرد"
+  },
+  "155": {
+    "src": "/proverbs/155.svg",
+    "de": "Ein Mensch entscheidet zwischen zwei Wegen",
+    "fa": "انتخاب میان دو راه"
+  },
+  "156": {
+    "src": "/proverbs/156.svg",
+    "de": "Ein Schuster arbeitet an einem Schuh",
+    "fa": "کفاش و کار خودش"
+  },
+  "157": {
+    "src": "/proverbs/157.svg",
+    "de": "Ein Weg endet an einer offenen Tür im Abendlicht",
+    "fa": "پایان راه و در گشوده"
+  },
+  "158": {
+    "src": "/proverbs/158.svg",
+    "de": "Zwei Hähne stehen einander auf einem Misthaufen gegenüber",
+    "fa": "دو خروس بر یک توده"
+  },
+  "201": {
+    "src": "/proverbs/201.svg",
+    "de": "Trübes Quellwasser läuft den Berg hinunter",
+    "fa": "آب گل‌آلود از سرچشمه"
+  },
+  "202": {
+    "src": "/proverbs/202.svg",
+    "de": "Wasser rinnt durch ein getragenes Sieb",
+    "fa": "آب از سوراخ‌های آبکش می‌ریزد"
+  },
+  "203": {
+    "src": "/proverbs/203.svg",
+    "de": "Unter einer Strohschicht fließt verborgen Wasser",
+    "fa": "آب پنهان زیر کاه"
+  },
+  "204": {
+    "src": "/proverbs/204.svg",
+    "de": "Zwei Esel zeigen auf die langen Ohren des anderen",
+    "fa": "دو الاغ با گوش‌های بلند"
+  },
+  "205": {
+    "src": "/proverbs/205.svg",
+    "de": "Ein Kind hält vor einem heißen Ofen Abstand",
+    "fa": "کودک از آتش فاصله می‌گیرد"
+  },
+  "206": {
+    "src": "/proverbs/206.svg",
+    "de": "Eine große Sonne beleuchtet die Landschaft",
+    "fa": "آفتاب دلیل آفتاب"
+  },
+  "207": {
+    "src": "/proverbs/207.svg",
+    "de": "Eine Person verschwindet hinter einem Tor, eine Erinnerung verblasst",
+    "fa": "دوری از چشم و دل"
+  },
+  "208": {
+    "src": "/proverbs/208.svg",
+    "de": "Ein Ruf hallt zwischen Bäumen zurück",
+    "fa": "پژواک صدا در جنگل"
+  },
+  "209": {
+    "src": "/proverbs/209.svg",
+    "de": "Ein Pferd trägt eine Geschenkschleife",
+    "fa": "اسب هدیه با روبان"
+  },
+  "210": {
+    "src": "/proverbs/210.svg",
+    "de": "Leere Worte lassen den Teller leer, eine Hand reicht echtes Halva",
+    "fa": "بشقاب خالی و حلوای واقعی"
+  },
+  "211": {
+    "src": "/proverbs/211.svg",
+    "de": "Zwei Sitzplätze zwischen hellem Mond und rußigem Topf",
+    "fa": "همنشینی با ماه و دیگ"
+  },
+  "212": {
+    "src": "/proverbs/212.svg",
+    "de": "Jemand spricht eine Tür an, hinter der Wand hört ein anderer zu",
+    "fa": "سخن به در برای شنیدن دیوار"
+  },
+  "213": {
+    "src": "/proverbs/213.svg",
+    "de": "Eine große Forderung wird gegen eine kleine abgewogen",
+    "fa": "درخواست بزرگ و پیشنهاد کوچک"
+  },
+  "214": {
+    "src": "/proverbs/214.svg",
+    "de": "Ein Wanderer prüft die Furt mit einem Stock",
+    "fa": "بررسی گذرگاه آب با چوب"
+  },
+  "215": {
+    "src": "/proverbs/215.svg",
+    "de": "Eine Person probiert ein Handwerk anhand eines offenen Buchs",
+    "fa": "آموختن با تجربه"
+  },
+  "216": {
+    "src": "/proverbs/216.svg",
+    "de": "Vom gestohlenen Ei führt eine Spur zum Kamel",
+    "fa": "از تخم‌مرغ تا شتر"
+  },
+  "217": {
+    "src": "/proverbs/217.svg",
+    "de": "Eine Axt trifft die Wurzeln des eigenen Baums",
+    "fa": "تبر بر ریشه خود"
+  },
+  "218": {
+    "src": "/proverbs/218.svg",
+    "de": "Zwei Menschen besprechen offen ihre gemeinsame Vereinbarung",
+    "fa": "گفت‌وگوی روشن پیش از همکاری"
+  },
+  "219": {
+    "src": "/proverbs/219.svg",
+    "de": "Zwei Krähen sitzen friedlich an einem gemeinsamen Nest",
+    "fa": "دو کلاغ کنار آشیانه"
+  },
+  "220": {
+    "src": "/proverbs/220.svg",
+    "de": "Eine Mühle mahlt langsam neben einer Waage",
+    "fa": "آسیاب آرام و ترازوی عدالت"
+  },
+  "221": {
+    "src": "/proverbs/221.svg",
+    "de": "Ein Kind spricht offen vor zwei Erwachsenen",
+    "fa": "سخن راست کودک در میان بزرگسالان"
+  },
+  "222": {
+    "src": "/proverbs/222.svg",
+    "de": "Zwei Freunde prüfen Münzen und eine Rechnung gemeinsam",
+    "fa": "دو دوست و حساب روشن"
+  },
+  "223": {
+    "src": "/proverbs/223.svg",
+    "de": "Ein Versprechen wird mit einer festen Hand bekräftigt",
+    "fa": "وفای به وعده"
+  },
+  "224": {
+    "src": "/proverbs/224.svg",
+    "de": "Ein Eselfohlen und ein erwachsener Esel ohne Schwanz",
+    "fa": "کره‌الاغ و الاغ بی‌دم"
+  },
+  "225": {
+    "src": "/proverbs/225.svg",
+    "de": "Ein Mensch sitzt im selbst verursachten Durcheinander seines Bettes",
+    "fa": "بستر آشفته به دست خود"
+  },
+  "226": {
+    "src": "/proverbs/226.svg",
+    "de": "Ein Mensch pflückt Früchte von einem tief geneigten Ast",
+    "fa": "میوه چیدن از شاخه فروتن"
+  },
+  "227": {
+    "src": "/proverbs/227.svg",
+    "de": "Menschen reden weiter vor dem verriegelten Stadttor",
+    "fa": "گفت‌وگوی مردم جلوی دروازه بسته"
+  },
+  "228": {
+    "src": "/proverbs/228.svg",
+    "de": "Ein Mensch repariert ein Dach während daneben diskutiert wird",
+    "fa": "تعمیر سقف در کنار حرف‌ها"
+  },
+  "229": {
+    "src": "/proverbs/229.svg",
+    "de": "Ein wählerischer Mensch bleibt zurück, das Pferd zieht davon",
+    "fa": "اسب می‌رود و آدم پیاده می‌ماند"
+  },
+  "230": {
+    "src": "/proverbs/230.svg",
+    "de": "Ein Glashaus und ein Stein in der Hand seines Bewohners",
+    "fa": "خانه شیشه‌ای و سنگ در دست"
+  },
+  "231": {
+    "src": "/proverbs/231.svg",
+    "de": "Kind und ältere Person lesen gemeinsam",
+    "fa": "کودک و بزرگسال در حال آموختن"
+  },
+  "232": {
+    "src": "/proverbs/232.svg",
+    "de": "Am frühen Morgen beginnt die Arbeit im Garten",
+    "fa": "کار باغ در صبح زود"
+  },
+  "233": {
+    "src": "/proverbs/233.svg",
+    "de": "Gelber Hund und Schakal teilen sich eine Decke",
+    "fa": "سگ زرد و شغال زیر یک پتو"
+  },
+  "234": {
+    "src": "/proverbs/234.svg",
+    "de": "Eine stille Person hört einem Vorschlag zu",
+    "fa": "سکوت در برابر پیشنهاد"
+  },
+  "235": {
+    "src": "/proverbs/235.svg",
+    "de": "Ein riesiger Stein bleibt neben einer unbenutzten Schleuder liegen",
+    "fa": "سنگ بزرگ و فلاخن بی‌استفاده"
+  },
+  "236": {
+    "src": "/proverbs/236.svg",
+    "de": "Ein Spatz sitzt auf einer Hand, eine Taube fern auf dem Dach",
+    "fa": "گنجشک در دست و کبوتر بر بام"
+  },
+  "237": {
+    "src": "/proverbs/237.svg",
+    "de": "Ein Kamel verschwindet hinter einer Düne, ein Beobachter dreht sich weg",
+    "fa": "شتر پشت تپه و رهگذر روی‌گردان"
+  },
+  "238": {
+    "src": "/proverbs/238.svg",
+    "de": "Ein Zuhörer prüft eine Behauptung in einem Buch",
+    "fa": "شنونده سخن را با دانش می‌سنجد"
+  },
+  "239": {
+    "src": "/proverbs/239.svg",
+    "de": "Eine Suchende entdeckt einen Schlüssel unter einem Stein",
+    "fa": "یافتن کلید زیر سنگ"
+  },
+  "240": {
+    "src": "/proverbs/240.svg",
+    "de": "Bewegung und Lesen halten Körper und Geist fit",
+    "fa": "ورزش و مطالعه برای تن و ذهن"
+  },
+  "241": {
+    "src": "/proverbs/241.svg",
+    "de": "Eine aufgebrochene kleine Chili gibt scharfe Samen frei",
+    "fa": "فلفل شکافته و دانه‌های تند"
+  },
+  "242": {
+    "src": "/proverbs/242.svg",
+    "de": "Tauben am Brunnen und Falken auf einer Klippe",
+    "fa": "کبوترها کنار آب و بازها بر صخره"
+  },
+  "243": {
+    "src": "/proverbs/243.svg",
+    "de": "Ein Mensch repariert selbst seinen Schuh",
+    "fa": "تعمیر کفش به دست خود"
+  },
+  "244": {
+    "src": "/proverbs/244.svg",
+    "de": "Eine Katze lauert einer Maus neben der Vorratskammer auf",
+    "fa": "گربه در کمین موش"
+  },
+  "245": {
+    "src": "/proverbs/245.svg",
+    "de": "Geduldig wird aus Trauben im Topf eine Süßspeise gekocht",
+    "fa": "پختن شیرینی از انگور با صبر"
+  },
+  "246": {
+    "src": "/proverbs/246.svg",
+    "de": "Ein Mensch weicht einem schwarz-weißen Seil vor einer Tür aus",
+    "fa": "دوری از ریسمان سیاه و سفید"
+  },
+  "247": {
+    "src": "/proverbs/247.svg",
+    "de": "Ein Fisch landet im Kescher eines späten Fischers",
+    "fa": "ماهی تازه در تور ماهیگیر"
+  },
+  "248": {
+    "src": "/proverbs/248.svg",
+    "de": "Eine Maus zieht einen viel zu großen Besen eine Treppe hinauf",
+    "fa": "موش با جاروی سنگین روی پله"
+  },
+  "249": {
+    "src": "/proverbs/249.svg",
+    "de": "Ein Hausbesitzer räumt Schnee von einem breiten Dach",
+    "fa": "برف‌روبی بام بزرگ"
+  },
+  "250": {
+    "src": "/proverbs/250.svg",
+    "de": "Beim Fegen entdeckt jemand Schmutz vor der eigenen Tür",
+    "fa": "دیدن آلودگی جلوی در خود"
+  }
+}

@@ -12,6 +12,7 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { additionalProverbs, type Proverb } from '@/app/additional-proverbs';
 import { moreProverbs } from '@/app/more-proverbs';
+import proverbArt from '@/app/proverb-art.json';
 import { newProverbs } from '@/app/new-proverbs';
 import {
   Select,
@@ -287,7 +288,8 @@ export default function Home() {
               <span className="mt-1 block text-[10px] font-semibold uppercase tracking-[0.2em] text-[#9a5b32]">ضرب‌المثل · Sprichwort</span>
             </span>
           </a>
-          <nav className="flex items-center text-xs font-semibold text-[#45615c] sm:text-sm" aria-label="Hauptnavigation">
+          <nav className="flex flex-wrap justify-end items-center gap-x-4 gap-y-2 text-xs font-semibold text-[#45615c] sm:text-sm" aria-label="Hauptnavigation">
+            <a className="transition-colors hover:text-[#a44a2c]" href={`${process.env.NEXT_PUBLIC_ASSET_BASE ?? ''}/lernpaket/`}>Lernpaket</a>
             <a className="transition-colors hover:text-[#a44a2c]" href="#ueber">Über das Projekt</a>
           </nav>
         </div>
@@ -299,12 +301,16 @@ export default function Home() {
             <BookOpen className="size-4" />
             Zweisprachige Sammlung
           </div>
-          <h2 className="font-heading text-3xl font-semibold tracking-[-0.045em] text-[#173c36] sm:text-5xl">
+          <h1 className="font-heading text-3xl font-semibold tracking-[-0.045em] text-[#173c36] sm:text-5xl">
             Finde das passende Sprichwort
-          </h2>
+          </h1>
           <p dir="rtl" lang="fa" className="mt-3 text-lg text-[#7c5c45]">ضرب‌المثل مورد نظرت را پیدا کن</p>
         </div>
 
+        <aside className="learning-banner" aria-label="Kostenlose Lernprobe">
+          <p><strong>Vom Nachschlagen zum Verstehen.</strong> Fünf Sprichwörter mit Umschrift und Übungen kennenlernen.</p>
+          <a href={`${process.env.NEXT_PUBLIC_ASSET_BASE ?? ''}/lernpaket/#lernprobe`}>Kostenlose Lernprobe</a>
+        </aside>
         <div className="search-surface mx-auto mt-9 max-w-5xl p-3 sm:p-4">
           <div className="relative">
             <Search className="pointer-events-none absolute left-4 top-1/2 size-5 -translate-y-1/2 text-[#8d8274]" />
@@ -390,6 +396,7 @@ export default function Home() {
           <div className="mt-8 grid gap-5 md:grid-cols-2">
             {filteredProverbs.map((proverb, index) => {
               const isPersian = direction === 'fa';
+              const illustration = proverbArt[String(proverb.id) as keyof typeof proverbArt];
               const sourceText = isPersian
                 ? proverb.proverb
                 : proverb.equivalent;
@@ -402,6 +409,16 @@ export default function Home() {
                   className="proverb-card group"
                   style={{ animationDelay: `${Math.min(index, 5) * 45}ms` }}
                 >
+                  <img
+                    src={illustration.src.startsWith('data:') ? illustration.src : `${process.env.NEXT_PUBLIC_ASSET_BASE ?? ''}${illustration.src}`}
+                    alt={isPersian ? illustration.fa : illustration.de}
+                    lang={isPersian ? 'fa' : 'de'}
+                    width={640}
+                    height={300}
+                    loading={index < 2 ? 'eager' : 'lazy'}
+                    decoding="async"
+                    className="mb-5 block h-auto w-full rounded-xl"
+                  />
                   <div className="flex items-center justify-between gap-3">
                     <Badge
                       variant="outline"
@@ -505,7 +522,7 @@ export default function Home() {
           </div>
           <figure className="overflow-hidden rounded-[1.6rem] border border-white/15 bg-[#fbf7ed] p-2 shadow-2xl shadow-black/20">
             <img
-              src="/og.png"
+              src={`${process.env.NEXT_PUBLIC_ASSET_BASE ?? ''}/og.png`}
               alt="Zarbol Masal – Sprichwörter neu verstehen"
               width="1730"
               height="909"

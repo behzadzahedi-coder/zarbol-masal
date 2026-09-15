@@ -3,6 +3,7 @@ import './globals.css';
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.zarbol-masal.de'),
+  alternates: { canonical: '/' },
   title: 'Zarbol Masal | Persische & deutsche Sprichwörter',
   description:
     'Persische und deutsche Sprichwörter mit Bedeutung, Übersetzung und kulturell passender Entsprechung entdecken.',
@@ -46,7 +47,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="de">
-      <body>{children}</body>
+      <body><script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ '@context': 'https://schema.org', '@type': 'WebSite', name: 'Zarbol Masal', url: 'https://www.zarbol-masal.de/', inLanguage: ['de', 'fa'], description: 'Persische und deutsche Sprichwörter im kulturellen Vergleich.' }) }} />{children}</body>
     </html>
   );
 }
