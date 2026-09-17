@@ -38,5 +38,45 @@
   "18": {
     "de": { "src": "/photos/fa/18.webp", "alt": "Ein durstiger Mensch sucht Wasser, obwohl es in seinem eigenen Krug ist" },
     "fa": { "src": "/photos/de/18.webp", "alt": "کوهنوردی دوردست را می‌جوید، در حالی که چیز خوب نزدیک اوست" }
+  },
+  "19": {
+    "de": { "src": "/photos/fa/19.webp", "alt": "Wasser fließt aus einem alten Bewässerungskanal fort" },
+    "fa": { "src": "/photos/de/19.webp", "alt": "فنجان شکسته و چای ریخته‌شده‌ای که دیگر نمی‌توان به حالت اول برگرداند" }
+  },
+  "20": {
+    "de": { "src": "/photos/fa/20.webp", "alt": "Eine Frau betrachtet zwei Schalen mit vollkommen stillem Wasser" },
+    "fa": { "src": "/photos/de/20.webp", "alt": "اتاقی ساکت با ساعت ایستاده و صندلی خالی" }
+  },
+  "21": {
+    "de": { "src": "/photos/fa/21.webp", "alt": "Ein Mann rührt Flusswasser trüb, um darin einen Fisch zu fangen" },
+    "fa": { "src": "/photos/de/21.webp", "alt": "ماهیگیری که در آب گل‌آلود ماهی می‌گیرد" }
+  },
+  "22": {
+    "de": { "src": "/photos/fa/22.webp", "alt": "Viele glänzende Kannen und Schüsseln stehen um leere Essteller" },
+    "fa": { "src": "/photos/de/22.webp", "alt": "دیگ مسی براق با غذایی خراب درون آن" }
+  },
+  "23": {
+    "de": { "src": "/photos/fa/23.webp", "alt": "Ein Wanderer geht zwischen zwei Säulen auf ein offenes Tor zu" },
+    "fa": { "src": "/photos/de/23.webp", "alt": "شخصی کنار ساعت برای حل معما وقت می‌گذارد" }
+  },
+  "24": {
+    "de": { "src": "/photos/fa/24.webp", "alt": "Roter Granatapfelsaft tritt aus einem gefüllten Tonkrug" },
+    "fa": { "src": "/photos/de/24.webp", "alt": "مردی با قلبی پر از محبت با دوستانش سخن می‌گوید" }
+  },
+  "25": {
+    "de": { "src": "/photos/fa/25.webp", "alt": "Ein Mann gießt sich selbst Wasser über den Kopf" },
+    "fa": { "src": "/photos/de/25.webp", "alt": "شخصی روی تخت نامرتبی که خودش آماده کرده است دراز کشیده" }
+  },
+  "26": {
+    "de": { "src": "/photos/fa/26.webp", "alt": "Eine Hand versucht, zwei Wassermelonen zugleich zu tragen" },
+    "fa": { "src": "/photos/de/26.webp", "alt": "مهمانی که می‌کوشد هم‌زمان در دو جشن عروسی برقصد" }
+  },
+  "27": {
+    "de": { "src": "/photos/fa/27.webp", "alt": "Ein Esel trägt eine schiefe Last, die vor dem Ziel herunterfällt" },
+    "fa": { "src": "/photos/de/27.webp", "alt": "نجاری خط‌کش بلند و راست را کنار خط‌کش کج انتخاب می‌کند" }
+  },
+  "28": {
+    "de": { "src": "/photos/fa/28.webp", "alt": "Ein Geldschein wird vom Wind gebracht und gleich wieder fortgetragen" },
+    "fa": { "src": "/photos/de/28.webp", "alt": "شن تازه‌برداشته‌شده از میان انگشتان می‌ریزد" }
   }
 }
