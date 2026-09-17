@@ -2,6 +2,14 @@
 @import 'tw-animate-css';
 @import 'shadcn/tailwind.css';
 
+@font-face {
+  font-family: 'Vazirmatn';
+  src: url('/fonts/Vazirmatn-Variable.woff2') format('woff2');
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+}
+
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
@@ -121,7 +129,7 @@
   }
 
   [lang='fa'] {
-    font-family: Tahoma, Arial, sans-serif;
+    font-family: 'Vazirmatn', Tahoma, Arial, sans-serif;
   }
 
   ::selection {
@@ -167,8 +175,14 @@
 .locale-empty { padding: 60px 24px; text-align: center; }
 .locale-empty h2 { font-size: 26px; margin-bottom: 14px; }
 .locale-empty button { margin-top: 24px; }
-.localized-site[dir='rtl'] h1, .localized-site[dir='rtl'] h2, .localized-site[dir='rtl'] h3 { font-family: Tahoma,Arial,sans-serif; }
+.localized-site[dir='rtl'] { font-family: 'Vazirmatn', Tahoma, Arial, sans-serif; }
+.localized-site[dir='rtl'] h1, .localized-site[dir='rtl'] h2, .localized-site[dir='rtl'] h3,
+.locale-cards h2[lang='fa'], .content-wrap h1[lang='fa'], .topic-entries h2[lang='fa'] {
+  font-family: 'Vazirmatn', Tahoma, Arial, sans-serif;
+  letter-spacing: normal;
+}
 .localized-site [lang='de'] { font-family: Georgia,serif; text-align: left; }
+.localized-site h1[lang='de'], .localized-site h2[lang='de'] { font-family: Georgia,serif; }
 .localized-site[dir='rtl'] .content-wrap p, .localized-site[dir='rtl'] .locale-cards p { line-height: 2; }
 .localized-site[dir='rtl'] blockquote { border-left: 0; border-right: 3px solid #9a5b32; padding-left: 0; padding-right: 20px; }
 @media(max-width:1000px){ .locale-cards { grid-template-columns: repeat(2,minmax(0,1fr)); } }
