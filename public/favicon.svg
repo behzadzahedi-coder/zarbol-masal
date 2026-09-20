@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" rx="18" fill="#173c36"/>
+  <path d="M9 9h46v46H9z" fill="none" stroke="#f2c389" stroke-width="2" opacity=".45"/>
+  <text x="32" y="45" fill="#f2c389" font-family="Tahoma,Arial,sans-serif" font-size="39" font-weight="700" text-anchor="middle">ض</text>
+</svg>
