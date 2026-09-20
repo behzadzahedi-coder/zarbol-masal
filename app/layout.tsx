@@ -5,7 +5,7 @@ import './globals.css';
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.zarbol-masal.de'),
   alternates: { canonical: '/' },
-  icons: { icon: '/favicon.svg' },
+  icons: { icon: '/brand/favicon-v2.svg' },
   title: 'Persische Sprichwörter auf Deutsch: Bedeutung & Beispiele | Zarbol Masal',
   robots: { index: true, follow: true, googleBot: { index: true, follow: true, 'max-image-preview': 'large', 'max-snippet': -1, 'max-video-preview': -1 } },
   description:
