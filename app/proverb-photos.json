@@ -238,5 +238,373 @@
   "68": {
     "de": { "src": "/photos/fa/68.webp", "alt": "Besucher lernen respektvoll unterschiedliche Bräuche in zwei persischen Höfen kennen" },
     "fa": { "src": "/photos/de/68.webp", "alt": "مسافران شیوه‌های متفاوت سلام‌کردن در فرهنگ‌های گوناگون را می‌آموزند" }
+  },
+  "117": {
+    "de": {"src": "/photos/shared/117.webp", "alt": "Ein ruhiges Kissen neben einer sauber abgeschlossenen Rechnung"},
+    "fa": {"src": "/photos/shared/117.webp", "alt": "بالش آسوده و حساب پاک"}
+  },
+  "118": {
+    "de": {"src": "/photos/shared/118.webp", "alt": "Feuer erreicht trockenes Holz und einen grünen Zweig"},
+    "fa": {"src": "/photos/shared/118.webp", "alt": "آتش در چوب خشک و تر"}
+  },
+  "119": {
+    "de": {"src": "/photos/shared/119-v2.webp", "alt": "Eine Frau wird vor einer unberührten Suppe zu Unrecht beschuldigt"},
+    "fa": {"src": "/photos/shared/119-v2.webp", "alt": "زنی کنار کاسهٔ آش دست‌نخورده به ناحق سرزنش می‌شود"}
+  },
+  "120": {
+    "de": {"src": "/photos/shared/120.webp", "alt": "Ein Zicklein wartet im Winter auf Frühlingsmelonen"},
+    "fa": {"src": "/photos/shared/120.webp", "alt": "بزغاله در انتظار خربزه بهاری"}
+  },
+  "121": {
+    "de": {"src": "/photos/shared/121.webp", "alt": "Ein geöffneter Schirm hält den Regen von einem Menschen fern"},
+    "fa": {"src": "/photos/shared/121.webp", "alt": "چتر پیش از باران"}
+  },
+  "122": {
+    "de": {"src": "/photos/shared/122.webp", "alt": "Aus einem Gespräch wird das Können eines Menschen sichtbar"},
+    "fa": {"src": "/photos/shared/122.webp", "alt": "شناخت آدم از گفتارش"}
+  },
+  "123": {
+    "de": {"src": "/photos/shared/123.webp", "alt": "Ein bellender Hund reagiert auf einen erhobenen Stock"},
+    "fa": {"src": "/photos/shared/123.webp", "alt": "سگ پارس‌کن و چوب بلند"}
+  },
+  "124": {
+    "de": {"src": "/photos/shared/124.webp", "alt": "Aus einem alten Holzklotz steigt kräftiger Rauch"},
+    "fa": {"src": "/photos/shared/124.webp", "alt": "دود از کنده قدیمی"}
+  },
+  "125": {
+    "de": {"src": "/photos/shared/125.webp", "alt": "Langsames Backen bringt ein fertiges Brot hervor"},
+    "fa": {"src": "/photos/shared/125.webp", "alt": "نان آماده پس از انتظار"}
+  },
+  "126": {
+    "de": {"src": "/photos/shared/126.webp", "alt": "Ein Mensch betrachtet ein gerahmtes Bild früherer Jahre"},
+    "fa": {"src": "/photos/shared/126.webp", "alt": "نگاه به تصویر سال‌های گذشته"}
+  },
+  "127": {
+    "de": {"src": "/photos/shared/127.webp", "alt": "Ein Hund schläft ungestört neben einer Tür"},
+    "fa": {"src": "/photos/shared/127.webp", "alt": "سگ خوابیده کنار در"}
+  },
+  "128": {
+    "de": {"src": "/photos/shared/128.webp", "alt": "Ein Auge betrachtet eine wirkliche Landschaft"},
+    "fa": {"src": "/photos/shared/128.webp", "alt": "دیدن منظره با چشم"}
+  },
+  "129": {
+    "de": {"src": "/photos/shared/129.webp", "alt": "Tiefe Wurzeln nähren süße Früchte"},
+    "fa": {"src": "/photos/shared/129.webp", "alt": "ریشه تلخ صبر و میوه شیرین"}
+  },
+  "130": {
+    "de": {"src": "/photos/shared/130.webp", "alt": "Ein Küken belehrt eine größere Henne"},
+    "fa": {"src": "/photos/shared/130.webp", "alt": "جوجه به مرغ درس می‌دهد"}
+  },
+  "131": {
+    "de": {"src": "/photos/shared/131.webp", "alt": "Ein Arzt schaut mit Medizin in den eigenen Spiegel"},
+    "fa": {"src": "/photos/shared/131.webp", "alt": "پزشک و آینه خودش"}
+  },
+  "132": {
+    "de": {"src": "/photos/shared/132.webp", "alt": "Zwei Menschen treffen sich zwischen getrennten Bergen"},
+    "fa": {"src": "/photos/shared/132.webp", "alt": "دیدار دو انسان میان کوه‌ها"}
+  },
+  "133": {
+    "de": {"src": "/photos/shared/133.webp", "alt": "Ein Gast wird mit Tee und Brot empfangen"},
+    "fa": {"src": "/photos/shared/133.webp", "alt": "پذیرایی از مهمان با چای و نان"}
+  },
+  "134": {
+    "de": {"src": "/photos/shared/134.webp", "alt": "Ein Kebabspieß wird im richtigen Abstand über Feuer gehalten"},
+    "fa": {"src": "/photos/shared/134.webp", "alt": "سیخ کباب با فاصله مناسب از آتش"}
+  },
+  "135": {
+    "de": {"src": "/photos/shared/135.webp", "alt": "Uhr und Sprechblase am richtigen Platz"},
+    "fa": {"src": "/photos/shared/135.webp", "alt": "زمان و جای مناسب سخن"}
+  },
+  "136": {
+    "de": {"src": "/photos/shared/136.webp", "alt": "Unter einem Dach herrschen Sonne und Regen"},
+    "fa": {"src": "/photos/shared/136.webp", "alt": "یک بام با آفتاب و باران"}
+  },
+  "137": {
+    "de": {"src": "/photos/shared/137.webp", "alt": "Ein hungriger Mensch freut sich über einfaches Brot"},
+    "fa": {"src": "/photos/shared/137.webp", "alt": "آدم گرسنه و نان ساده"}
+  },
+  "138": {
+    "de": {"src": "/photos/shared/138.webp", "alt": "Stilles Wasser setzt Algen an, daneben fließt ein Bach"},
+    "fa": {"src": "/photos/shared/138.webp", "alt": "آب راکد و جوی روان"}
+  },
+  "139": {
+    "de": {"src": "/photos/shared/139.webp", "alt": "Die Sonne bricht nach dem Regen hervor"},
+    "fa": {"src": "/photos/shared/139.webp", "alt": "آفتاب پس از باران"}
+  },
+  "140": {
+    "de": {"src": "/photos/shared/140.webp", "alt": "Ein Mensch baut eine Mauer statt nur darüber zu reden"},
+    "fa": {"src": "/photos/shared/140.webp", "alt": "ساختن دیوار با عمل"}
+  },
+  "141": {
+    "de": {"src": "/photos/shared/141.webp", "alt": "Drei goldene Früchte in einer Schüssel"},
+    "fa": {"src": "/photos/shared/141.webp", "alt": "سه میوه طلایی در کاسه"}
+  },
+  "142": {
+    "de": {"src": "/photos/shared/142.webp", "alt": "Ein Hahn kräht nachts neben einem schlafenden Haus"},
+    "fa": {"src": "/photos/shared/142.webp", "alt": "خروس بی‌محل در شب"}
+  },
+  "143": {
+    "de": {"src": "/photos/shared/143.webp", "alt": "Ein reich tragender Baum neigt seine Zweige"},
+    "fa": {"src": "/photos/shared/143.webp", "alt": "درخت پربار با شاخه افتاده"}
+  },
+  "144": {
+    "de": {"src": "/photos/shared/144.webp", "alt": "Eine helfende Hand reicht Brot, der Empfänger wendet sich ab"},
+    "fa": {"src": "/photos/shared/144.webp", "alt": "نان در دست بخشنده و روی برگرداندن"}
+  },
+  "145": {
+    "de": {"src": "/photos/shared/145.webp", "alt": "Eine einzelne helfende Tat wiegt viele Worte auf"},
+    "fa": {"src": "/photos/shared/145.webp", "alt": "یک کردار در برابر سخنان بسیار"}
+  },
+  "146": {
+    "de": {"src": "/photos/shared/146.webp", "alt": "Ein Gesicht und ein Herz spiegeln sich"},
+    "fa": {"src": "/photos/shared/146.webp", "alt": "چهره و دل در آینه"}
+  },
+  "147": {
+    "de": {"src": "/photos/shared/147.webp", "alt": "Freundliche Worte locken eine Schlange aus ihrem Loch"},
+    "fa": {"src": "/photos/shared/147.webp", "alt": "سخن خوش و مار بیرون از سوراخ"}
+  },
+  "148": {
+    "de": {"src": "/photos/shared/148.webp", "alt": "Eine Schüssel glüht heißer als die Suppe darin"},
+    "fa": {"src": "/photos/shared/148.webp", "alt": "کاسه داغ‌تر از آش"}
+  },
+  "149": {
+    "de": {"src": "/photos/shared/149.webp", "alt": "Ein Mensch hält im Bett die Augen trotz Weckruf geschlossen"},
+    "fa": {"src": "/photos/shared/149.webp", "alt": "خود را به خواب زدن"}
+  },
+  "150": {
+    "de": {"src": "/photos/shared/150.webp", "alt": "Eine kleine Handvoll Korn zeigt den Inhalt eines großen Sacks"},
+    "fa": {"src": "/photos/shared/150.webp", "alt": "مشت گندم و کیسه بزرگ"}
+  },
+  "151": {
+    "de": {"src": "/photos/shared/151.webp", "alt": "Ein Fischkopf mit aufsteigenden Geruchslinien"},
+    "fa": {"src": "/photos/shared/151.webp", "alt": "ماهی که از سر بو می‌دهد"}
+  },
+  "152": {
+    "de": {"src": "/photos/shared/152.webp", "alt": "Eine klare Stopp-Hand bringt Ruhe"},
+    "fa": {"src": "/photos/shared/152.webp", "alt": "نه روشن و آسودگی"}
+  },
+  "153": {
+    "de": {"src": "/photos/shared/153.webp", "alt": "Ein Lehrling zeigt dem erfahrenen Meister einen Trick"},
+    "fa": {"src": "/photos/shared/153.webp", "alt": "شاگرد در برابر استاد"}
+  },
+  "154": {
+    "de": {"src": "/photos/shared/154.webp", "alt": "Eine Sprechblase ersetzt die echte Süßspeise nicht"},
+    "fa": {"src": "/photos/shared/154.webp", "alt": "گفتن حلوا جای خوردن را نمی‌گیرد"}
+  },
+  "155": {
+    "de": {"src": "/photos/shared/155.webp", "alt": "Ein Mensch entscheidet zwischen zwei Wegen"},
+    "fa": {"src": "/photos/shared/155.webp", "alt": "انتخاب میان دو راه"}
+  },
+  "156": {
+    "de": {"src": "/photos/shared/156.webp", "alt": "Ein Schuster arbeitet an einem Schuh"},
+    "fa": {"src": "/photos/shared/156.webp", "alt": "کفاش و کار خودش"}
+  },
+  "157": {
+    "de": {"src": "/photos/shared/157.webp", "alt": "Ein Weg endet an einer offenen Tür im Abendlicht"},
+    "fa": {"src": "/photos/shared/157.webp", "alt": "پایان راه و در گشوده"}
+  },
+  "158": {
+    "de": {"src": "/photos/shared/158.webp", "alt": "Zwei Hähne stehen einander auf einem Misthaufen gegenüber"},
+    "fa": {"src": "/photos/shared/158.webp", "alt": "دو خروس بر یک توده"}
+  },
+  "201": {
+    "de": {"src": "/photos/shared/201.webp", "alt": "Trübes Quellwasser läuft den Berg hinunter"},
+    "fa": {"src": "/photos/shared/201.webp", "alt": "آب گل‌آلود از سرچشمه"}
+  },
+  "202": {
+    "de": {"src": "/photos/shared/202.webp", "alt": "Wasser rinnt durch ein getragenes Sieb"},
+    "fa": {"src": "/photos/shared/202.webp", "alt": "آب از سوراخ‌های آبکش می‌ریزد"}
+  },
+  "203": {
+    "de": {"src": "/photos/shared/203.webp", "alt": "Unter einer Strohschicht fließt verborgen Wasser"},
+    "fa": {"src": "/photos/shared/203.webp", "alt": "آب پنهان زیر کاه"}
+  },
+  "204": {
+    "de": {"src": "/photos/shared/204.webp", "alt": "Zwei Esel zeigen auf die langen Ohren des anderen"},
+    "fa": {"src": "/photos/shared/204.webp", "alt": "دو الاغ با گوش‌های بلند"}
+  },
+  "206": {
+    "de": {"src": "/photos/shared/206.webp", "alt": "Eine große Sonne beleuchtet die Landschaft"},
+    "fa": {"src": "/photos/shared/206.webp", "alt": "آفتاب دلیل آفتاب"}
+  },
+  "207": {
+    "de": {"src": "/photos/shared/207.webp", "alt": "Eine Person verschwindet hinter einem Tor, eine Erinnerung verblasst"},
+    "fa": {"src": "/photos/shared/207.webp", "alt": "دوری از چشم و دل"}
+  },
+  "208": {
+    "de": {"src": "/photos/shared/208.webp", "alt": "Ein Ruf hallt zwischen Bäumen zurück"},
+    "fa": {"src": "/photos/shared/208.webp", "alt": "پژواک صدا در جنگل"}
+  },
+  "209": {
+    "de": {"src": "/photos/shared/209.webp", "alt": "Ein Pferd trägt eine Geschenkschleife"},
+    "fa": {"src": "/photos/shared/209.webp", "alt": "اسب هدیه با روبان"}
+  },
+  "210": {
+    "de": {"src": "/photos/shared/210.webp", "alt": "Leere Worte lassen den Teller leer, eine Hand reicht echtes Halva"},
+    "fa": {"src": "/photos/shared/210.webp", "alt": "بشقاب خالی و حلوای واقعی"}
+  },
+  "211": {
+    "de": {"src": "/photos/shared/211.webp", "alt": "Zwei Sitzplätze zwischen hellem Mond und rußigem Topf"},
+    "fa": {"src": "/photos/shared/211.webp", "alt": "همنشینی با ماه و دیگ"}
+  },
+  "212": {
+    "de": {"src": "/photos/shared/212.webp", "alt": "Jemand spricht eine Tür an, hinter der Wand hört ein anderer zu"},
+    "fa": {"src": "/photos/shared/212.webp", "alt": "سخن به در برای شنیدن دیوار"}
+  },
+  "213": {
+    "de": {"src": "/photos/shared/213.webp", "alt": "Eine große Forderung wird gegen eine kleine abgewogen"},
+    "fa": {"src": "/photos/shared/213.webp", "alt": "درخواست بزرگ و پیشنهاد کوچک"}
+  },
+  "214": {
+    "de": {"src": "/photos/shared/214.webp", "alt": "Ein Wanderer prüft die Furt mit einem Stock"},
+    "fa": {"src": "/photos/shared/214.webp", "alt": "بررسی گذرگاه آب با چوب"}
+  },
+  "215": {
+    "de": {"src": "/photos/shared/215.webp", "alt": "Eine Person probiert ein Handwerk anhand eines offenen Buchs"},
+    "fa": {"src": "/photos/shared/215.webp", "alt": "آموختن با تجربه"}
+  },
+  "216": {
+    "de": {"src": "/photos/shared/216.webp", "alt": "Vom gestohlenen Ei führt eine Spur zum Kamel"},
+    "fa": {"src": "/photos/shared/216.webp", "alt": "از تخم‌مرغ تا شتر"}
+  },
+  "217": {
+    "de": {"src": "/photos/shared/217.webp", "alt": "Eine Axt trifft die Wurzeln des eigenen Baums"},
+    "fa": {"src": "/photos/shared/217.webp", "alt": "تبر بر ریشه خود"}
+  },
+  "218": {
+    "de": {"src": "/photos/shared/218.webp", "alt": "Zwei Menschen besprechen offen ihre gemeinsame Vereinbarung"},
+    "fa": {"src": "/photos/shared/218.webp", "alt": "گفت‌وگوی روشن پیش از همکاری"}
+  },
+  "219": {
+    "de": {"src": "/photos/shared/219.webp", "alt": "Zwei Krähen sitzen friedlich an einem gemeinsamen Nest"},
+    "fa": {"src": "/photos/shared/219.webp", "alt": "دو کلاغ کنار آشیانه"}
+  },
+  "220": {
+    "de": {"src": "/photos/shared/220.webp", "alt": "Eine Mühle mahlt langsam neben einer Waage"},
+    "fa": {"src": "/photos/shared/220.webp", "alt": "آسیاب آرام و ترازوی عدالت"}
+  },
+  "221": {
+    "de": {"src": "/photos/shared/221.webp", "alt": "Ein Kind spricht offen vor zwei Erwachsenen"},
+    "fa": {"src": "/photos/shared/221.webp", "alt": "سخن راست کودک در میان بزرگسالان"}
+  },
+  "222": {
+    "de": {"src": "/photos/shared/222.webp", "alt": "Zwei Freunde prüfen Münzen und eine Rechnung gemeinsam"},
+    "fa": {"src": "/photos/shared/222.webp", "alt": "دو دوست و حساب روشن"}
+  },
+  "223": {
+    "de": {"src": "/photos/shared/223.webp", "alt": "Ein Versprechen wird mit einer festen Hand bekräftigt"},
+    "fa": {"src": "/photos/shared/223.webp", "alt": "وفای به وعده"}
+  },
+  "224": {
+    "de": {"src": "/photos/shared/224.webp", "alt": "Ein Eselfohlen und ein erwachsener Esel ohne Schwanz"},
+    "fa": {"src": "/photos/shared/224.webp", "alt": "کره‌الاغ و الاغ بی‌دم"}
+  },
+  "225": {
+    "de": {"src": "/photos/shared/225.webp", "alt": "Ein Mensch sitzt im selbst verursachten Durcheinander seines Bettes"},
+    "fa": {"src": "/photos/shared/225.webp", "alt": "بستر آشفته به دست خود"}
+  },
+  "226": {
+    "de": {"src": "/photos/shared/226.webp", "alt": "Ein Mensch pflückt Früchte von einem tief geneigten Ast"},
+    "fa": {"src": "/photos/shared/226.webp", "alt": "میوه چیدن از شاخه فروتن"}
+  },
+  "227": {
+    "de": {"src": "/photos/shared/227.webp", "alt": "Menschen reden weiter vor dem verriegelten Stadttor"},
+    "fa": {"src": "/photos/shared/227.webp", "alt": "گفت‌وگوی مردم جلوی دروازه بسته"}
+  },
+  "228": {
+    "de": {"src": "/photos/shared/228.webp", "alt": "Ein Mensch repariert ein Dach während daneben diskutiert wird"},
+    "fa": {"src": "/photos/shared/228.webp", "alt": "تعمیر سقف در کنار حرف‌ها"}
+  },
+  "229": {
+    "de": {"src": "/photos/shared/229.webp", "alt": "Ein wählerischer Mensch bleibt zurück, das Pferd zieht davon"},
+    "fa": {"src": "/photos/shared/229.webp", "alt": "اسب می‌رود و آدم پیاده می‌ماند"}
+  },
+  "230": {
+    "de": {"src": "/photos/shared/230.webp", "alt": "Ein Glashaus und ein Stein in der Hand seines Bewohners"},
+    "fa": {"src": "/photos/shared/230.webp", "alt": "خانه شیشه‌ای و سنگ در دست"}
+  },
+  "231": {
+    "de": {"src": "/photos/shared/231.webp", "alt": "Kind und ältere Person lesen gemeinsam"},
+    "fa": {"src": "/photos/shared/231.webp", "alt": "کودک و بزرگسال در حال آموختن"}
+  },
+  "232": {
+    "de": {"src": "/photos/shared/232.webp", "alt": "Am frühen Morgen beginnt die Arbeit im Garten"},
+    "fa": {"src": "/photos/shared/232.webp", "alt": "کار باغ در صبح زود"}
+  },
+  "233": {
+    "de": {"src": "/photos/shared/233.webp", "alt": "Gelber Hund und Schakal teilen sich eine Decke"},
+    "fa": {"src": "/photos/shared/233.webp", "alt": "سگ زرد و شغال زیر یک پتو"}
+  },
+  "234": {
+    "de": {"src": "/photos/shared/234.webp", "alt": "Eine stille Person hört einem Vorschlag zu"},
+    "fa": {"src": "/photos/shared/234.webp", "alt": "سکوت در برابر پیشنهاد"}
+  },
+  "235": {
+    "de": {"src": "/photos/shared/235.webp", "alt": "Ein riesiger Stein bleibt neben einer unbenutzten Schleuder liegen"},
+    "fa": {"src": "/photos/shared/235.webp", "alt": "سنگ بزرگ و فلاخن بی‌استفاده"}
+  },
+  "236": {
+    "de": {"src": "/photos/shared/236.webp", "alt": "Ein Spatz sitzt auf einer Hand, eine Taube fern auf dem Dach"},
+    "fa": {"src": "/photos/shared/236.webp", "alt": "گنجشک در دست و کبوتر بر بام"}
+  },
+  "237": {
+    "de": {"src": "/photos/shared/237.webp", "alt": "Ein Kamel verschwindet hinter einer Düne, ein Beobachter dreht sich weg"},
+    "fa": {"src": "/photos/shared/237.webp", "alt": "شتر پشت تپه و رهگذر روی‌گردان"}
+  },
+  "238": {
+    "de": {"src": "/photos/shared/238.webp", "alt": "Ein Zuhörer prüft eine Behauptung in einem Buch"},
+    "fa": {"src": "/photos/shared/238.webp", "alt": "شنونده سخن را با دانش می‌سنجد"}
+  },
+  "239": {
+    "de": {"src": "/photos/shared/239.webp", "alt": "Eine Suchende entdeckt einen Schlüssel unter einem Stein"},
+    "fa": {"src": "/photos/shared/239.webp", "alt": "یافتن کلید زیر سنگ"}
+  },
+  "240": {
+    "de": {"src": "/photos/shared/240.webp", "alt": "Bewegung und Lesen halten Körper und Geist fit"},
+    "fa": {"src": "/photos/shared/240.webp", "alt": "ورزش و مطالعه برای تن و ذهن"}
+  },
+  "241": {
+    "de": {"src": "/photos/shared/241.webp", "alt": "Eine aufgebrochene kleine Chili gibt scharfe Samen frei"},
+    "fa": {"src": "/photos/shared/241.webp", "alt": "فلفل شکافته و دانه‌های تند"}
+  },
+  "242": {
+    "de": {"src": "/photos/shared/242.webp", "alt": "Tauben am Brunnen und Falken auf einer Klippe"},
+    "fa": {"src": "/photos/shared/242.webp", "alt": "کبوترها کنار آب و بازها بر صخره"}
+  },
+  "243": {
+    "de": {"src": "/photos/shared/243.webp", "alt": "Ein Mensch repariert selbst seinen Schuh"},
+    "fa": {"src": "/photos/shared/243.webp", "alt": "تعمیر کفش به دست خود"}
+  },
+  "244": {
+    "de": {"src": "/photos/shared/244.webp", "alt": "Eine Katze lauert einer Maus neben der Vorratskammer auf"},
+    "fa": {"src": "/photos/shared/244.webp", "alt": "گربه در کمین موش"}
+  },
+  "245": {
+    "de": {"src": "/photos/shared/245.webp", "alt": "Geduldig wird aus Trauben im Topf eine Süßspeise gekocht"},
+    "fa": {"src": "/photos/shared/245.webp", "alt": "پختن شیرینی از انگور با صبر"}
+  },
+  "246": {
+    "de": {"src": "/photos/shared/246.webp", "alt": "Ein Mensch weicht einem schwarz-weißen Seil vor einer Tür aus"},
+    "fa": {"src": "/photos/shared/246.webp", "alt": "دوری از ریسمان سیاه و سفید"}
+  },
+  "247": {
+    "de": {"src": "/photos/shared/247.webp", "alt": "Ein Fisch landet im Kescher eines späten Fischers"},
+    "fa": {"src": "/photos/shared/247.webp", "alt": "ماهی تازه در تور ماهیگیر"}
+  },
+  "248": {
+    "de": {"src": "/photos/shared/248.webp", "alt": "Eine Maus zieht einen viel zu großen Besen eine Treppe hinauf"},
+    "fa": {"src": "/photos/shared/248.webp", "alt": "موش با جاروی سنگین روی پله"}
+  },
+  "249": {
+    "de": {"src": "/photos/shared/249.webp", "alt": "Ein Hausbesitzer räumt Schnee von einem breiten Dach"},
+    "fa": {"src": "/photos/shared/249.webp", "alt": "برف‌روبی بام بزرگ"}
+  },
+  "250": {
+    "de": {"src": "/photos/shared/250.webp", "alt": "Beim Fegen entdeckt jemand Schmutz vor der eigenen Tür"},
+    "fa": {"src": "/photos/shared/250.webp", "alt": "دیدن آلودگی جلوی در خود"}
+  },
+  "205": {
+    "de": {"src": "/photos/shared/205.webp", "alt": "Ein Kind hält vor einem heißen Ofen Abstand"},
+    "fa": {"src": "/photos/shared/205.webp", "alt": "کودک از آتش فاصله می‌گیرد"}
   }
 }
