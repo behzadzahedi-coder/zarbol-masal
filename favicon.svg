@@ -1,5 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <rect width="64" height="64" rx="18" fill="#173c36"/>
-  <path d="M9 9h46v46H9z" fill="none" stroke="#f2c389" stroke-width="2" opacity=".45"/>
-  <text x="32" y="45" fill="#f2c389" font-family="Tahoma,Arial,sans-serif" font-size="39" font-weight="700" text-anchor="middle">ض</text>
+  <path fill="#123f39" d="M4 15.5C4 9.15 9.15 4 15.5 4h13C34.85 4 40 9.15 40 15.5v12C40 33.85 34.85 39 28.5 39H22l-8 8v-8.1C8.32 38.16 4 33.3 4 27.5z"/>
+  <path fill="#a85d32" d="M60 20.5C60 14.15 54.85 9 48.5 9h-13C29.15 9 24 14.15 24 20.5v12C24 38.85 29.15 44 35.5 44H42l8 8v-8.1c5.68-.74 10-5.6 10-11.4z"/>
+  <path fill="none" stroke="#f7ead6" stroke-width="2.25" stroke-linecap="round" d="M28 18.25h9M27.5 23.25h13" opacity=".95"/>
+  <circle cx="14" cy="26" r="2.25" fill="#b66b38"/>
+  <circle cx="21" cy="26" r="2.25" fill="#b66b38"/>
+  <circle cx="43" cy="31" r="2.25" fill="#123f39"/>
+  <circle cx="50" cy="31" r="2.25" fill="#123f39"/>
 </svg>
