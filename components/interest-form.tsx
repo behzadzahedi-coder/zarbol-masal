@@ -6,6 +6,7 @@ export default function InterestForm({locale}:{locale:Locale}){
   <h2 id="interest-title">{fa?'به بستهٔ آموزشی علاقه دارید؟':'Interesse am Lernpaket?'}</h2>
   <p>{fa?'ایمیل خود را بفرستید تا بدانیم آیا این بسته برای شما مفید است. این درخواست خرید نیست.':'Schreib uns, wenn du das Paket für 9,90 € interessant findest. Deine Nachricht ist keine Bestellung.'}</p>
   <input type="hidden" name="_subject" value="Zarbol Masal – Interesse am Lernpaket"/>
+  <input type="hidden" name="_captcha" value="false"/>
   <input type="hidden" name="_url" value={`https://www.zarbol-masal.de/${locale}/lernpaket`}/>
   <label htmlFor="interest-email">{fa?'ایمیل شما':'Deine E-Mail-Adresse'}</label>
   <input id="interest-email" name="email" type="email" autoComplete="email" required/>
