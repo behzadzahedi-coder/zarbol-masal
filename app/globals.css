@@ -154,6 +154,24 @@
 .locale-intro > p { font-size: 19px; line-height: 1.85; margin-block: 18px; }
 .locale-intro .topic-nav { justify-content: center; margin-block: 22px; }
 .locale-intro a { color: #854021; text-decoration: underline; text-underline-offset: 4px; }
+.homepage-offer { max-width:850px; display:grid; grid-template-columns:112px minmax(0,1fr); align-items:center; gap:24px; margin:32px auto; padding:24px; border-block:1px solid #cbd6c9; background:#edf0e6; }
+.homepage-offer h2 { margin:0 0 10px; font:600 27px/1.35 Georgia,serif; color:#173c36; }
+.homepage-offer p { margin:0; line-height:1.75; color:#173c36; }
+.homepage-offer-preview img { display:block; width:100%; height:auto; border:1px solid #cbd6c9; }
+.homepage-offer-actions { display:flex; flex-wrap:wrap; align-items:center; gap:12px 20px; margin-block:18px 12px; }
+.homepage-sample-link { color:#854021; font-size:15px; text-decoration:underline; text-underline-offset:3px; }
+.homepage-offer .homepage-offer-note { color:#49645f; font-size:13px; line-height:1.65; }
+#kostenlos-ueben { scroll-margin-top:24px; }
+@media(max-width:600px) {
+  .homepage-offer { grid-template-columns:72px minmax(0,1fr); align-items:start; gap:14px; padding:20px 16px; }
+  .homepage-offer-copy { display:contents; }
+  .homepage-offer h2 { font-size:22px; align-self:center; }
+  .homepage-offer-copy > p, .homepage-offer-actions { grid-column:1 / -1; }
+  .homepage-offer p { font-size:15px; }
+  .homepage-offer-actions { flex-direction:column; align-items:stretch; gap:14px; margin:0; }
+  .homepage-offer .learning-button { padding:10px; font-size:15px; }
+  .homepage-offer .homepage-offer-note { font-size:13px; }
+}
 .locale-search { max-width: 850px; margin: 30px auto; }
 .locale-search label { display: block; font-size: 15px; font-weight: 600; }
 .locale-search input { display: block; width: 100%; border: 1px solid #b7c4b7; background: white; border-radius: 12px; padding: 17px; font-size: 18px; margin-top: 8px; }
