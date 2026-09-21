@@ -9,8 +9,9 @@ import LocalizedCollection from '@/components/localized-collection';
 import LocalizedLessons from '@/components/localized-lessons';
 import GermanAboutContent from '@/components/german-about-content';
 import PackageOffer from '@/components/package-offer';
+import PackageTeaser from '@/components/package-teaser';
 
-export function CollectionPage({locale}:{locale:Locale}){const t=ui[locale];return <><section className="locale-intro"><h1>{t.title}</h1><p>{t.lead}</p><nav aria-label={t.topics}><ul className="topic-nav">{topics.map(topic=><li key={topic.slug}><a href={localizedPath(locale,`/themen/${topic.slug}`)}>{locale==='fa'?topic.fa:topic.name}</a></li>)}</ul></nav><a className="learning-text-link" href={localizedPath(locale,'/lernpaket')}>{t.free}</a></section><LocalizedCollection locale={locale}/></>;}
+export function CollectionPage({locale}:{locale:Locale}){const t=ui[locale];return <><section className="locale-intro"><h1>{t.title}</h1><p>{t.lead}</p><nav aria-label={t.topics}><ul className="topic-nav">{topics.map(topic=><li key={topic.slug}><a href={localizedPath(locale,`/themen/${topic.slug}`)}>{locale==='fa'?topic.fa:topic.name}</a></li>)}</ul></nav><a className="learning-text-link" href={localizedPath(locale,'/lernpaket')+'#kostenlos-ueben'}>{t.free}</a></section><PackageTeaser locale={locale}/><LocalizedCollection locale={locale}/></>;}
 
 export function DetailPage({locale,p}:{locale:Locale;p:Proverb}){
  const fa=locale==='fa';const t=ui[locale];const l=proverbLearning[p.id];const topic=topics.find(t=>t.name===p.category)!;const photo=(photos as Record<string,Record<Locale,{src:string;alt:string}>>)[p.id]?.[locale];
